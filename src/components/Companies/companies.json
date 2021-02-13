@@ -1,0 +1,26 @@
+[
+  {
+    "id": "id-1",
+    "address": "Darfo Boario Terme (BS), Italy",
+    "country": "Italy",
+    "telephone": "39 3387685160",
+    "international": "39 3315725689",
+    "mail": "info@italtechnology-srl.it"
+  },
+  {
+    "id": "id-2",
+    "address": "Kyiv, Ukraine",
+    "country": "Ukraine",
+    "telephone": "38 0952811515",
+    "international": "39 3499344027",
+    "mail": "office@atlascorporation-llc.com"
+  },
+  {
+    "id": "id-3",
+    "address": "Warsaw, Poland",
+    "country": "Warsaw",
+    "telephone": "48 787862472",
+    "international": "39 3315725689",
+    "mail": "info@atlaspolska-spzoo.pl"
+  }
+]

@@ -1,0 +1,124 @@
+.allCompaniesDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: linear-gradient(92.04deg, #233d97 10.45%, #192550 55.55%), #f0f0f0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+
+  color: #fff;
+  opacity: 0.7;
+}
+
+.allCompanies {
+  list-style: none;
+  display: flex;
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 180%;
+  /* identical to box height, or 40px */
+
+  text-align: center;
+
+  color: #425583;
+}
+
+.company {
+  width: 280px;
+  margin-right: 200px;
+}
+
+.company:nth-child(3n) {
+  margin-right: 0;
+}
+
+.svg {
+  margin-top: 60px;
+  width: 250px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg:hover,
+.svg:focus {
+  transform: translateY(20px) scale(1.2);
+}
+
+.textAbout {
+  margin-right: 140px;
+  margin-left: 140px;
+  margin-top: 60px;
+  font-family: Proxima Nova;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2.1;
+
+  color: #ffffff;
+  box-shadow: 1px 2px 10px 5px rgb(28, 11, 182);
+}
+
+.modalCompanyInfo {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+.telephone {
+  width: 250px;
+  height: 10px;
+  font-family: Proxima Nova;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 200%;
+
+  color: #000;
+}
+
+.tel {
+  color: #000;
+}
+
+.tel:hover,
+.tel:focus {
+  color: darkred;
+}
+
+.mailSvg {
+  margin-right: 10px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.mail:hover,
+.mail:focus {
+  transform: scale(1);
+  color: darkred;
+}
+
+.blockAddress {
+  margin-right: 60px;
+}
+
+.blockAddress:nth-child(3n) {
+  margin-right: 0;
+}
+
+.svgComp {
+  width: 300px;
+}

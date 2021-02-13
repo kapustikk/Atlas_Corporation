@@ -38,3 +38,8 @@
   color: white;
   transform: scale(1.1);
 }
+
+.arrow {
+  margin-bottom: -7px;
+  transform: rotate(180deg);
+}

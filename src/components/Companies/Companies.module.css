@@ -1,0 +1,107 @@
+.companyDiv {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #fff;
+}
+
+.ItalTechnology {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+
+.ItalTechnology:nth-child(2n) {
+  margin-bottom: 0;
+}
+
+.companyPhoto {
+  width: 550px;
+  height: 700px;
+}
+
+.textBlockOne {
+  width: 450px;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+.textBlockTwo {
+  width: 400px;
+  margin-top: 220px;
+  margin-right: 90px;
+}
+
+.companiesName {
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1.22;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.78;
+}
+
+.ourServices {
+  background-color: #e5e5e5;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.addressBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fff;
+}
+
+.telephone {
+  width: 250px;
+  height: 10px;
+  font-family: Proxima Nova;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 200%;
+
+  color: #000;
+}
+
+.tel {
+  color: #000;
+}
+
+.tel:hover,
+.tel:focus {
+  color: darkred;
+}
+
+.mailSvg {
+  margin-right: 10px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.mail:hover,
+.mail:focus {
+  transform: scale(1);
+  color: darkred;
+}
+
+.svg {
+  width: 300px;
+}
