@@ -2,9 +2,9 @@ import s from '../AboutUs/AboutUs.module.css';
 import startUp from '../images/start-up.jpg';
 import techCntrl from '../images/technical-control.jpg';
 import afterSales from '../images/after-sales-service.jpg';
-import production from '../images/production.jpg';
-import mounting from '../images/mounting.jpg';
-import techSec from '../images/t-security.jpg';
+// import production from '../images/production.jpg';
+// import mounting from '../images/mounting.jpg';
+// import techSec from '../images/t-security.jpg';
 
 export default function OurServices() {
   return (

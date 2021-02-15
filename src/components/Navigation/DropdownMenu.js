@@ -1,60 +1,97 @@
-import React from 'react';
-import s from '../Navigation/Dropdown.module.css';
+import { useState, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import arrow from '../images/arrow.svg';
+import arrowRight from '../images/arrow-right.svg';
+import s from '../Navigation/Navigation.module.css';
 
-class Dropdown extends React.Component {
-  constructor() {
-    super();
+export default function DropdownMenu() {
+  const location = useLocation();
+  const [anchorEl, setAnchorEl] = useState(null);
+  const ref = useRef(null);
 
-    this.state = {
-      displayMenu: false,
-    };
+  const handleClick = e => {
+    setAnchorEl(e.currentTarget);
+  };
 
-    this.showDropdownMenu = this.showDropdownMenu.bind(this);
-    this.hideDropdownMenu = this.hideDropdownMenu.bind(this);
-  }
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
-  showDropdownMenu(event) {
-    event.preventDefault();
-    this.setState({ displayMenu: true }, () => {
-      document.addEventListener('click', this.hideDropdownMenu);
-    });
-  }
+  return (
+    <div>
+      <button
+        aria-controls="customized-menu"
+        ref={ref}
+        aria-haspopup="true"
+        onClick={handleClick}
+        className={s.button}
+      >
+        <img src={arrow} alt="" className={s.arrow} />
+      </button>
 
-  hideDropdownMenu() {
-    this.setState({ displayMenu: false }, () => {
-      document.removeEventListener('click', this.hideDropdownMenu);
-    });
-  }
-
-  render() {
-    return (
-      <div className={s.dropdown} style={{ background: 'red', width: '200px' }}>
-        <div className={s.button} onClick={this.showDropdownMenu}>
-          {' '}
-          My Setting{' '}
-        </div>
-
-        {this.state.displayMenu ? (
-          <ul>
-            <li>
-              <a className="active" href="#Companies">
-                Companies
-              </a>
-            </li>
-            <li>
-              <a href="#Ital Technology">Ital Technology</a>
-            </li>
-            <li>
-              <a href="#Atlas Corporation">Atlas Corporation</a>
-            </li>
-            <li>
-              <a href="#Atlas Polska">Atlas Polska</a>
-            </li>
-          </ul>
-        ) : null}
-      </div>
-    );
-  }
+      <Menu
+        id="customized-menu"
+        anchorEl={anchorEl}
+        className={s.menu}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+        elevation={0}
+        getContentAnchorEl={null}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'center',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'center',
+        }}
+      >
+        <MenuItem onClick={handleClose} className={s.menuItem}>
+          <Link
+            className={s.link}
+            to={{
+              pathname: `/our-companies/ital-technology`,
+              state: {
+                from: location.pathname,
+              },
+            }}
+          >
+            Ital Technology
+            <img src={arrowRight} alt="" className={s.arrowRight} />
+          </Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose} className={s.menuItem}>
+          <Link
+            className={s.link}
+            to={{
+              pathname: `/our-companies/atlas-corporation`,
+              state: {
+                from: location.pathname,
+              },
+            }}
+          >
+            Atlas Corporation
+            <img src={arrowRight} alt="" className={s.arrowRight} />
+          </Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose} className={s.menuItem}>
+          <Link
+            className={s.link}
+            to={{
+              pathname: `/our-companies/atlas-polska`,
+              state: {
+                from: location.pathname,
+              },
+            }}
+          >
+            Atlas Polska
+            <img src={arrowRight} alt="" className={s.arrowRight} />
+          </Link>
+        </MenuItem>
+      </Menu>
+    </div>
+  );
 }
-
-export default Dropdown;

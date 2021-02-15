@@ -18,6 +18,16 @@ const ItalTech = lazy(() =>
     './components/Companies/ItalTechnology/ItalTechnology' /* webpackChunkName: "ItalTechnology" */
   ),
 );
+const AtlasCorp = lazy(() =>
+  import(
+    './components/Companies/AtlasCorporation/AtlasCorporation' /* webpackChunkName: "AtlasCorporation"*/
+  ),
+);
+const AtlasPol = lazy(() =>
+  import(
+    './components/Companies/AtlasPolska/AtlasPolska' /* webpackChunkName: "AtlasPolska" */
+  ),
+);
 
 function App() {
   return (
@@ -36,6 +46,14 @@ function App() {
 
           <Route path="/our-companies/ital-technology">
             <ItalTech />
+          </Route>
+
+          <Route path="/our-companies/atlas-corporation">
+            <AtlasCorp />
+          </Route>
+
+          <Route path="/our-companies/atlas-polska">
+            <AtlasPol />
           </Route>
         </Switch>
       </Suspense>

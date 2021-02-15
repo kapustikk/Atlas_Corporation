@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import arrow from '../images/arrow.svg';
+import DropdownMenu from './DropdownMenu';
 import s from '../Navigation/Navigation.module.css';
 
 const Navigation = () => (
@@ -18,7 +18,7 @@ const Navigation = () => (
         activeClassName={s.activeNavlink}
         to="/services"
       >
-        Services <img src={arrow} alt="" className={s.arrow} />
+        Services
       </NavLink>
       <NavLink
         className={s.navlink}
@@ -32,8 +32,9 @@ const Navigation = () => (
         activeClassName={s.activeNavlink}
         to="/our-companies"
       >
-        Companies <img src={arrow} alt="" className={s.arrow} />
+        Companies
       </NavLink>
+      <DropdownMenu />
       <NavLink
         className={s.navlink}
         activeClassName={s.activeNavlink}
