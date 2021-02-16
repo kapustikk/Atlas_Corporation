@@ -15,7 +15,7 @@ export default function OurServices() {
         <ul className={s.listOfOurServices}>
           <li className={s.itemOfOurServices}>
             <img src={startUp} alt="" className={s.itemsPhoto} />
-            <h4 className={s.titleOfOurServices}>Start-up overhead work</h4>
+            <h4 className={s.titleOfOurServices}>Supervision</h4>
             <p className={s.textOfOurServices}>
               Modernization of customer equipment with the ability to develop /
               manufacture individual components and replace control systems ...
@@ -30,7 +30,7 @@ export default function OurServices() {
           </li>
           <li className={s.itemOfOurServices}>
             <img src={techCntrl} alt="" className={s.itemsPhoto} />
-            <h4 className={s.titleOfOurServices}>Technical control</h4>
+            <h4 className={s.titleOfOurServices}>Construction</h4>
             <p className={s.textOfOurServices}>
               Our independent technical control will allow you to complete the
               project in a timely manner, avoiding the occurrence of risks and

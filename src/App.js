@@ -29,6 +29,18 @@ const AtlasPol = lazy(() =>
   ),
 );
 
+const Services = lazy(() =>
+  import(
+    './components/OurServices/Services' /* webpackChunkName: "Services" */
+  ),
+);
+
+const Supervision = lazy(() =>
+  import(
+    './components/OurServices/Supervision' /* webpackChunkName: "Supervision" */
+  ),
+);
+
 function App() {
   return (
     <Container>
@@ -44,6 +56,10 @@ function App() {
             <OurCompanies />
           </Route>
 
+          <Route path="/services" exact>
+            <Services />
+          </Route>
+
           <Route path="/our-companies/ital-technology">
             <ItalTech />
           </Route>
@@ -54,6 +70,10 @@ function App() {
 
           <Route path="/our-companies/atlas-polska">
             <AtlasPol />
+          </Route>
+
+          <Route path="/services/supervision">
+            <Supervision />
           </Route>
         </Switch>
       </Suspense>

@@ -44,15 +44,11 @@ export default function AboutUs() {
               A new vision and approach based оп knowledge and experience
             </p>
             <p className={s.text}>
-              Ital Corporation Corporation LLC and Atlas LLC and ATLAS POLSKA
-              Sp. z o.o. & RP81 Group is an Italian group of engineering and
-              construction companies, which offers turnkey solutions for its
-              customers in the field of thermal and hydraulic industrial
-              technologies, as well as industrial automation, gas treatment
-              plants. То become the first name in the steel and mecha­nical
-              carpentry industry as а sustainable partner and an indisputable
-              choice for our customers, providing а high level of service and
-              staying а step ahead of our competitors.{' '}
+              We are an engineering and construction group of companies which
+              supplies a vast array of solutions to its customers including the
+              revamping, after-sales industrial maintenance and turnkey plant
+              solutions for thermal and hydraulic industrial processes as well
+              as industrial automation and air treatment systems.
             </p>
             <div>
               <button type="button" className={s.button}>
