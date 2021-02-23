@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import DropdownMenu from './DropdownMenu';
+import DropdownMenuForServices from './DropdownForServices';
 import s from '../Navigation/Navigation.module.css';
 
 const Navigation = () => (
@@ -20,6 +21,7 @@ const Navigation = () => (
       >
         Services
       </NavLink>
+      <DropdownMenuForServices />
       <NavLink
         className={s.navlink}
         activeClassName={s.activeNavlink}

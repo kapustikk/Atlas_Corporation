@@ -1,11 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
+import AskUs from '../AboutUs/AskUs';
 import s from '../AboutUs/AboutUs.module.css';
-import startUp from '../images/start-up.jpg';
-import techCntrl from '../images/technical-control.jpg';
+import logistic from '../images/logistic.jpg';
+import construction from '../images/constructionMainPage.jpg';
 import afterSales from '../images/after-sales-service.jpg';
-import production from '../images/production.jpg';
-import mounting from '../images/mounting.jpg';
-import techSec from '../images/t-security.jpg';
+import commissioning from '../images/commissioningMainPage.jpg';
+import assembly from '../images/assemblyMainPage.jpg';
+import supervision from '../images/supervisionMainPage.jpg';
 
 export default function OurServices() {
   const location = useLocation();
@@ -16,7 +17,7 @@ export default function OurServices() {
       <div className={s.ourServices}>
         <ul className={s.listOfOurServices}>
           <li className={s.itemOfOurServices}>
-            <img src={startUp} alt="" className={s.itemsPhoto} />
+            <img src={supervision} alt="" className={s.itemsPhoto} />
             <h4 className={s.titleOfOurServices}>Supervision</h4>
             <p className={s.textOfOurServices}>
               Modernization of customer equipment with the ability to develop /
@@ -35,20 +36,24 @@ export default function OurServices() {
             </Link>
           </li>
           <li className={s.itemOfOurServices}>
-            <img src={techCntrl} alt="" className={s.itemsPhoto} />
+            <img src={construction} alt="" className={s.itemsPhoto} />
             <h4 className={s.titleOfOurServices}>Construction</h4>
             <p className={s.textOfOurServices}>
               Our independent technical control will allow you to complete the
               project in a timely manner, avoiding the occurrence of risks and
               observing all relevant ...
             </p>
-            <a
-              href="http://localhost:3001/our-companies"
+            <Link
               className={s.linkToServices}
-              aria-label="Technical control"
+              to={{
+                pathname: `/services/construction`,
+                state: {
+                  from: location.pathname,
+                },
+              }}
             >
-              Details{' '}
-            </a>
+              Details
+            </Link>
           </li>
           <li className={s.itemOfOurServices}>
             <img src={afterSales} alt="" className={s.itemsPhoto} />
@@ -57,62 +62,105 @@ export default function OurServices() {
               We provide after-sales service in several ways, Periodic
               maintenance (periodic inspection) ...
             </p>
-            <a
-              href="http://localhost:3001/our-companies"
+            <Link
               className={s.linkToServices}
-              aria-label="After-sales service"
+              to={{
+                pathname: `/services/after-sales`,
+                state: {
+                  from: location.pathname,
+                },
+              }}
             >
-              Details{' '}
-            </a>
+              Details
+            </Link>
           </li>
           <li className={s.itemOfOurServices}>
-            <img src={techSec} alt="" className={s.itemsPhoto} />
+            <img src={logistic} alt="" className={s.itemsPhoto} />
             <h4 className={s.titleOfOurServices}>Logistic support</h4>
             <p className={s.textOfOurServices}>
               Using free tangible assets and the high mobilization readiness of
               our specialists, we have developed a new business solution ...
             </p>
-            <a
-              href="http://localhost:3001/our-companies"
+            <Link
               className={s.linkToServices}
-              aria-label="Production and technical security"
+              to={{
+                pathname: `/services/logistic-support`,
+                state: {
+                  from: location.pathname,
+                },
+              }}
             >
-              Details{' '}
-            </a>
+              Details
+            </Link>
           </li>
           <li className={s.itemOfOurServices}>
-            <img src={mounting} alt="" className={s.itemsPhoto} />
+            <img src={assembly} alt="" className={s.itemsPhoto} />
             <h4 className={s.titleOfOurServices}>Assembly</h4>
             <p className={s.textOfOurServices}>
               Full or partial assembly of new and dismantling of metal
               structures and mechanical equipment with their subsequent
               restoration and adjustment ...
             </p>
-            <a
-              href="http://localhost:3001/our-companies"
+            <Link
               className={s.linkToServices}
-              aria-label="Mounting"
+              to={{
+                pathname: `/services/assembly`,
+                state: {
+                  from: location.pathname,
+                },
+              }}
             >
-              Details{' '}
-            </a>
+              Details
+            </Link>
           </li>
           <li className={s.itemOfOurServices}>
-            <img src={production} alt="" className={s.itemsPhoto} />
+            <img src={commissioning} alt="" className={s.itemsPhoto} />
             <h4 className={s.titleOfOurServices}>Commissioning & start-up</h4>
             <p className={s.textOfOurServices}>
               Thanks to our services and products, we satisfy the needs of
               customers represented in various industries, such as ...
             </p>
-            <a
-              href="http://localhost:3001/our-companies"
+            <Link
               className={s.linkToServices}
-              aria-label="Production"
+              to={{
+                pathname: `/services/commissioning-and-start-up`,
+                state: {
+                  from: location.pathname,
+                },
+              }}
             >
-              Details{' '}
-            </a>
+              Details
+            </Link>
           </li>
         </ul>
       </div>
+
+      <div className={s.guarantee}>
+        <div className={s.guaranteeFirstBlock}>
+          <h3 className={s.quaranteeTitle}>
+            We guarantee services highest quality
+          </h3>
+        </div>
+        <div className={s.guaranteeSecondBlock}>
+          <p className={s.quaranteeText}>
+            Commissioning includes testing all equipment to ensure its proper
+            operation. Our services in the field of commissioning of plants
+            include checking the condition of the equipment, the correct
+            connection of power and hydraulic communications, tuning, starting
+            and checking the parameters of the system, compliance with the set
+            pressure, temperature, flow rate of air, gas or liquid, as well as
+            compliance with the phase state of the analyzed Wednesday.
+          </p>
+          <p className={s.quaranteeText}>
+            The versatility of the company allows you to perform work of various
+            levels of complexity due to the extensive experience in the field of
+            industrial construction. We always follow the wishes of our
+            customers to satisfy their needs in the best way.
+          </p>
+        </div>
+      </div>
+
+      <AskUs />
     </div>
   );
 }

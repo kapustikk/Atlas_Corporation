@@ -1,5 +1,7 @@
+import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
 import mainPhoto from '../images/supervision.jpg';
+import advantagesSvg from '../images/check-circle.svg';
 
 export default function Supervision() {
   return (
@@ -51,6 +53,42 @@ export default function Supervision() {
         </div>
         <img src={mainPhoto} alt="" className={s.photo} />
       </div>
+
+      <div className={s.secondBlock}>
+        <h2 className={s.title}>Advantages</h2>
+        <ul className={s.advantagesList}>
+          <li className={s.advantagesItem}>
+            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+            <p className={s.advantagesText}>
+              Support to reach project goals by preventing the occurrence of
+              risks
+            </p>
+          </li>
+          <li className={s.advantagesItem}>
+            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+            <p className={s.advantagesText}>
+              Control over construction projects to ensure they are implemented
+              in an efficient and effective manner
+            </p>
+          </li>
+          <li className={s.advantagesItem}>
+            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+            <p className={s.advantagesText}>
+              Guarantees regarding quality, functioning and conformity of
+              materials, equipment and systems to the applicable standards
+            </p>
+          </li>
+          <li className={s.advantagesItem}>
+            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+            <p className={s.advantagesText}>
+              Guarantees regarding the implementation of all safety regulations
+              at the construction site
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <AskUs />
     </div>
   );
 }

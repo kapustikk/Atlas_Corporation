@@ -258,7 +258,6 @@ a:focus {
 .ourServicesDiv {
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .ourServices {
@@ -363,6 +362,42 @@ a:focus {
 .linkToServices:hover,
 .linkToServices:focus {
   color: #fff;
+}
+
+/* Services Main Page from folder Our Services*/
+
+.guarantee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  text-align: left;
+  background-color: #fff;
+}
+
+.guaranteeFirstBlock {
+  width: 450px;
+  margin-right: 80px;
+}
+
+.guaranteeSecondBlock {
+  width: 600px;
+}
+
+.quaranteeTitle {
+  font-family: Gilroy;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1.8;
+}
+
+.quaranteeText {
+  font-family: Gilroy;
+  font-size: 14px;
+  line-height: 1.78;
 }
 
 /* benefits */

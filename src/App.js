@@ -41,6 +41,34 @@ const Supervision = lazy(() =>
   ),
 );
 
+const Construction = lazy(() =>
+  import(
+    './components/OurServices/Construction' /* webpackChunkName: "Construction" */
+  ),
+);
+
+const AfterSalesService = lazy(() =>
+  import(
+    './components/OurServices/AfterSalesService' /* webpackChunkName: "AfterSalesService" */
+  ),
+);
+
+const LogisticSupport = lazy(() =>
+  import(
+    './components/OurServices/LogisticSupport' /* webpackChunkName: "LogisticSupport" */
+  ),
+);
+
+const Assembly = lazy(() =>
+  import(
+    './components/OurServices/Assembly' /* webpackChunkName: "Assembly" */
+  ),
+);
+
+const StartUp = lazy(() =>
+  import('./components/OurServices/StartUp' /* webpackChunkName: "StartUp" */),
+);
+
 function App() {
   return (
     <Container>
@@ -52,12 +80,36 @@ function App() {
             <AboutUs />
           </Route>
 
-          <Route path="/our-companies" exact>
-            <OurCompanies />
-          </Route>
-
           <Route path="/services" exact>
             <Services />
+          </Route>
+
+          <Route path="/services/supervision">
+            <Supervision />
+          </Route>
+
+          <Route path="/services/construction">
+            <Construction />
+          </Route>
+
+          <Route path="/services/after-sales">
+            <AfterSalesService />
+          </Route>
+
+          <Route path="/services/logistic-support">
+            <LogisticSupport />
+          </Route>
+
+          <Route path="/services/assembly">
+            <Assembly />
+          </Route>
+
+          <Route path="/services/commissioning-and-start-up">
+            <StartUp />
+          </Route>
+
+          <Route path="/our-companies" exact>
+            <OurCompanies />
           </Route>
 
           <Route path="/our-companies/ital-technology">
@@ -70,10 +122,6 @@ function App() {
 
           <Route path="/our-companies/atlas-polska">
             <AtlasPol />
-          </Route>
-
-          <Route path="/services/supervision">
-            <Supervision />
           </Route>
         </Switch>
       </Suspense>

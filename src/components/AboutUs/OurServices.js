@@ -1,6 +1,6 @@
 import s from '../AboutUs/AboutUs.module.css';
-import startUp from '../images/start-up.jpg';
-import techCntrl from '../images/technical-control.jpg';
+import supervision from '../images/supervisionMainPage.jpg';
+import construction from '../images/constructionMainPage.jpg';
 import afterSales from '../images/after-sales-service.jpg';
 // import production from '../images/production.jpg';
 // import mounting from '../images/mounting.jpg';
@@ -14,7 +14,7 @@ export default function OurServices() {
       <div className={s.ourServices}>
         <ul className={s.listOfOurServices}>
           <li className={s.itemOfOurServices}>
-            <img src={startUp} alt="" className={s.itemsPhoto} />
+            <img src={supervision} alt="" className={s.itemsPhoto} />
             <h4 className={s.titleOfOurServices}>Supervision</h4>
             <p className={s.textOfOurServices}>
               Modernization of customer equipment with the ability to develop /
@@ -29,7 +29,7 @@ export default function OurServices() {
             </a>
           </li>
           <li className={s.itemOfOurServices}>
-            <img src={techCntrl} alt="" className={s.itemsPhoto} />
+            <img src={construction} alt="" className={s.itemsPhoto} />
             <h4 className={s.titleOfOurServices}>Construction</h4>
             <p className={s.textOfOurServices}>
               Our independent technical control will allow you to complete the
