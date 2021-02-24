@@ -1,0 +1,128 @@
+.compleatedProjectsDiv {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 160px;
+  background-color: #fff;
+}
+
+.compleatedProjects {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainTitleProjects {
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.22;
+  margin-bottom: 80px;
+}
+
+.listOfProjects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 15px;
+  margin-bottom: 60px;
+}
+
+.itemProject {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.itemProject:nth-child(2n) {
+  margin-right: 0;
+}
+
+.itemProject:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.projectPhoto {
+  width: 500px;
+  height: 300px;
+}
+
+.textProjects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 99%;
+  color: #ffffff;
+
+  background: linear-gradient(
+    0deg,
+    rgba(36, 53, 110, 0.75),
+    rgba(36, 53, 110, 0.75)
+  );
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 46px 85px rgba(36, 53, 110, 0.23),
+    0px 21.2672px 39.2981px rgba(36, 53, 110, 0.170585),
+    0px 12.1686px 22.4855px rgba(36, 53, 110, 0.14416),
+    0px 7.38625px 13.6485px rgba(36, 53, 110, 0.124188),
+    0px 4.45054px 8.22383px rgba(36, 53, 110, 0.105812),
+    0px 2.47835px 4.57956px rgba(36, 53, 110, 0.0858404),
+    0px 1.06592px 1.96964px rgba(36, 53, 110, 0.0594147);
+  border-radius: 2px;
+}
+
+/* .textProjects:hover,
+  .textProjects:focus {
+    transform: scale(1.01);
+  } */
+
+.projectTitle {
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 180%;
+}
+
+.projectText {
+  font-family: Proxima Nova;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 180%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.buttonToProject {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 5%;
+  right: 0;
+  width: 120px;
+  height: 50px;
+  color: white;
+  background-color: #e04e49;
+  border: 0;
+  border-radius: 1px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttonToProject:hover,
+.buttonToProject:focus {
+  background-color: #fff;
+  color: #e04e49;
+  border: 1px solid #e04e49;
+}
+
+.arrowRightForDetails {
+  width: 15px;
+  margin-left: 10px;
+}

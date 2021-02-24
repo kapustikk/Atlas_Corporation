@@ -264,6 +264,7 @@ a:focus {
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 80px;
 }
 
 .ourServicesTitle {
@@ -362,6 +363,11 @@ a:focus {
 .linkToServices:hover,
 .linkToServices:focus {
   color: #fff;
+}
+
+.buttonServices {
+  composes: button;
+  margin-bottom: 80px;
 }
 
 /* Services Main Page from folder Our Services*/
@@ -593,6 +599,9 @@ a:focus {
 
 .buttonToProject {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 5%;
   right: 0;
   width: 120px;
@@ -609,6 +618,11 @@ a:focus {
   background-color: #fff;
   color: #e04e49;
   border: 1px solid #e04e49;
+}
+
+.arrowRight {
+  width: 15px;
+  margin-left: 10px;
 }
 
 /* Ask Us */

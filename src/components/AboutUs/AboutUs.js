@@ -17,9 +17,6 @@ export default function AboutUs() {
             Your reliable partner in the manufacture and installation of metal
             structures
           </h1>
-          <button type="button" className={s.button}>
-            Our Services
-          </button>
         </div>
         <div className={s.socials}>
           <a

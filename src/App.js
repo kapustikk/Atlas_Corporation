@@ -69,6 +69,12 @@ const StartUp = lazy(() =>
   import('./components/OurServices/StartUp' /* webpackChunkName: "StartUp" */),
 );
 
+const Projects = lazy(() =>
+  import(
+    './components/OurProjects/AllProjects' /* webpackChunkName: "Projects" */
+  ),
+);
+
 function App() {
   return (
     <Container>
@@ -122,6 +128,10 @@ function App() {
 
           <Route path="/our-companies/atlas-polska">
             <AtlasPol />
+          </Route>
+
+          <Route path="/projects" exact>
+            <Projects />
           </Route>
         </Switch>
       </Suspense>

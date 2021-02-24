@@ -4,7 +4,7 @@ import s from '../OurCompanies/OurCompanies.module.css';
 import ItalTechSvg from '../images/ital-technology.svg';
 import AtlasMain from '../images/atlasMain.png';
 import AtlasPl from '../images/atlas-pol.svg';
-import arrowRight from '../images/arrow-right.svg';
+// import arrowRight from '../images/arrow-right.svg';
 
 // import AtlasCorp from '../Companies/AtlasCorporation/AtlasCorporation';
 // import AtlasPol from '../Companies/AtlasPolska/AtlasPolska';

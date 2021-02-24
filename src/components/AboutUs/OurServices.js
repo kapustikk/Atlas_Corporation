@@ -1,3 +1,4 @@
+import { Link, useLocation } from 'react-router-dom';
 import s from '../AboutUs/AboutUs.module.css';
 import supervision from '../images/supervisionMainPage.jpg';
 import construction from '../images/constructionMainPage.jpg';
@@ -7,6 +8,8 @@ import afterSales from '../images/after-sales-service.jpg';
 // import techSec from '../images/t-security.jpg';
 
 export default function OurServices() {
+  const location = useLocation();
+
   return (
     <div className={s.ourServicesDiv}>
       <h3 className={s.ourServicesTitle}>What we do</h3>
@@ -110,9 +113,19 @@ export default function OurServices() {
             </li> */}
         </ul>
       </div>
-      <button type="button" className={s.button}>
-        All services
-      </button>
+      <Link
+        className={s.linkToCompanies}
+        to={{
+          pathname: `/services`,
+          state: {
+            from: location.pathname,
+          },
+        }}
+      >
+        <button type="button" className={s.buttonServices}>
+          All services
+        </button>
+      </Link>
     </div>
   );
 }
