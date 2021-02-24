@@ -1,9 +1,21 @@
 import { Component } from 'react';
 import s from '../OurProjects/OurProjects.module.css';
-import project1 from '../images/project1.jpg';
-import project2 from '../images/project2.jpg';
-import project3 from '../images/project3.jpg';
-import project4 from '../images/project4.jpg';
+import project1 from '../images/forProject1.jpg';
+import project2 from '../images/forProject2.jpg';
+import project3 from '../images/forProject3.jpg';
+import project4 from '../images/forProject4.jpg';
+import project5 from '../images/forProject5.jpg';
+import project6 from '../images/assembly.jpg';
+import project7 from '../images/forProject7.jpg';
+import project8 from '../images/forProject8.jpg';
+import project9 from '../images/forProject9.jpg';
+import project10 from '../images/italPage2.jpg';
+import project11 from '../images/forProject11.jpg';
+import project12 from '../images/forProject12.jpg';
+import project13 from '../images/forProject13.jpg';
+import project14 from '../images/forProject14.jpg';
+import project15 from '../images/forProject15.jpg';
+
 import arrowRightForDetails from '../images/arrowRightForDetails.svg';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
@@ -149,7 +161,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project5}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -171,7 +183,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project6}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -193,7 +205,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project7}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -215,7 +227,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project8}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -240,7 +252,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project9}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -262,7 +274,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project10}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -283,7 +295,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project11}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -304,7 +316,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project12}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -325,7 +337,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project13}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -346,7 +358,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project14}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -371,7 +383,7 @@ export default class CompletedProjects extends Component {
 
               <li className={s.itemProject}>
                 <img
-                  src={project2}
+                  src={project15}
                   alt="technical control"
                   className={s.projectPhoto}
                 />
@@ -384,28 +396,6 @@ export default class CompletedProjects extends Component {
                     setup. PLCs setup. Mechanical supervision. Delivery control.
                     Quality control. Electrical supervision. Cold/hot
                     commissioning. Ukraine
-                  </p>
-                  <button type="button" className={s.buttonToProject}>
-                    Details{' '}
-                    <img
-                      src={arrowRightForDetails}
-                      alt=""
-                      className={s.arrowRightForDetails}
-                    />
-                  </button>
-                </span>
-              </li>
-
-              <li className={s.itemProject}>
-                <img
-                  src={project2}
-                  alt="technical control"
-                  className={s.projectPhoto}
-                />
-                <span className={s.textProjects}>
-                  <p className={s.projectText}>
-                    Construction of the bisarca rolfo semi-trailer from the
-                    preparation of the templates to the dimensional check
                   </p>
                   <button type="button" className={s.buttonToProject}>
                     Details{' '}

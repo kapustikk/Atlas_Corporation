@@ -40,7 +40,7 @@
   margin-right: 0;
 }
 
-.itemProject:nth-last-child(-n + 2) {
+.itemProject:nth-last-child(-n + 1) {
   margin-bottom: 0;
 }
 
