@@ -27,14 +27,14 @@ export default function CompletedProjects() {
                 rock wool insulation and inox plates cladding. Assembly of the
                 fans, exhaust duct and gas system in Netherlands
               </p>
-              <button type="button" className={s.buttonToProject}>
+              {/* <button type="button" className={s.buttonToProject}>
                 Details{' '}
                 <img
                   src={arrowRightForDetails}
                   alt=""
                   className={s.arrowRightForDetails}
                 />
-              </button>
+              </button> */}
             </span>
           </li>
           <li className={s.itemProject}>
@@ -49,14 +49,14 @@ export default function CompletedProjects() {
                 replacementrestoration. Frame cracks welding. Full re-assembly
                 of the wagons
               </p>
-              <button type="button" className={s.buttonToProject}>
+              {/* <button type="button" className={s.buttonToProject}>
                 Details{' '}
                 <img
                   src={arrowRightForDetails}
                   alt=""
                   className={s.arrowRightForDetails}
                 />
-              </button>
+              </button> */}
             </span>
           </li>
           <li className={s.itemProject}>
@@ -72,14 +72,14 @@ export default function CompletedProjects() {
                 compressors, dryers etc.), electrical works supervision.
                 Equipment setup/adjustment. USA
               </p>
-              <button type="button" className={s.buttonToProject}>
+              {/* <button type="button" className={s.buttonToProject}>
                 Details{' '}
                 <img
                   src={arrowRightForDetails}
                   alt=""
                   className={s.arrowRightForDetails}
                 />
-              </button>
+              </button> */}
             </span>
           </li>
           <li className={s.itemProject}>
@@ -93,14 +93,14 @@ export default function CompletedProjects() {
                 Replacement of booster fan case, expansion joints, replacement
                 of ducts including curved and straight segments, diameter 2800mm
               </p>
-              <button type="button" className={s.buttonToProject}>
+              {/* <button type="button" className={s.buttonToProject}>
                 Details{' '}
                 <img
                   src={arrowRightForDetails}
                   alt=""
                   className={s.arrowRightForDetails}
                 />
-              </button>
+              </button> */}
             </span>
           </li>
         </ul>
