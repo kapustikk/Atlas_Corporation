@@ -37,7 +37,7 @@ export default function Footer() {
               activeClassName={s.activeNavlink}
               to="/services"
             >
-              Services <img src={arrow} alt="" className={s.arrow} />
+              Services
             </NavLink>
             <NavLink
               className={s.navlink}
@@ -49,9 +49,9 @@ export default function Footer() {
             <NavLink
               className={s.navlink}
               activeClassName={s.activeNavlink}
-              to="/companies"
+              to="/our-companies"
             >
-              Companies <img src={arrow} alt="" className={s.arrow} />
+              Companies
             </NavLink>
             <NavLink
               className={s.navlink}

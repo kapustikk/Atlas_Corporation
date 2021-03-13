@@ -22,3 +22,29 @@
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+
+.close {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../images/close.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color 200ms ease-in-out;
+  transition: background-color var(--animation-duration) var(--timing-function);
+  outline: none;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  transform: scale(1.2);
+  border: none;
+}

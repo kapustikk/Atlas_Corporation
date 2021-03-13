@@ -51,19 +51,15 @@ export default class AddSwiper extends Component {
           onSwiper={swiper => console.log(swiper)}
         >
           {this.props.children}
-          {/* <SwiperSlide className={s.slides}>
-            <img src={photo1ForProject1} alt="" width="640"/>
-            </SwiperSlide>
-            <SwiperSlide className={s.slides}>
-            <img src={photo2ForProject1} alt="" width="640"/>
-            </SwiperSlide>
-            <SwiperSlide className={s.slides}>
-            <img src={photo3ForProject1} alt="" width="640"/>
-            </SwiperSlide>
-            <SwiperSlide className={s.slides}>
-            <img src={photo4ForProject1} alt="" width="640"/>
-            </SwiperSlide> */}
         </Swiper>
+        <button
+          type="button"
+          data-action="close-modal"
+          className={s.close}
+          onClick={() => {
+            this.props.onClose();
+          }}
+        ></button>
       </div>,
       swiperRoot,
     );

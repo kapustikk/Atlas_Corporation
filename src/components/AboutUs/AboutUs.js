@@ -7,11 +7,15 @@ import CompletedProjects from './CompletedProjects';
 import AskUs from './AskUs';
 import Map from './Map';
 
+import video from '../video/mainVideo.mp4';
+
 export default function AboutUs() {
   return (
     <div>
-      <div className={s.hero}>
-        <div className={s.titleDiv}>
+      <div className={s.intro}>
+        <div className={s.hero}>
+          <video src={video} className={s.video} autoPlay muted loop></video>
+          {/* <div className={s.titleDiv}>
           <p className={s.title}>We are Atlas company</p>
           <h1 className={s.mainTitle}>
             Your reliable partner in the manufacture and installation of metal
@@ -27,6 +31,7 @@ export default function AboutUs() {
           >
             IN
           </a>
+        </div> */}
         </div>
       </div>
       <div className={s.aboutUsBlock}>
