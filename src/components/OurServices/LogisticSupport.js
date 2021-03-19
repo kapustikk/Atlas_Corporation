@@ -1,6 +1,6 @@
 import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
-import mainPhoto from '../images/after-sales.jpg';
+import mainPhoto from '../images/logisticMain.jpg';
 import logistic1 from '../images/logistic1.JPG';
 import logistic2 from '../images/logistic2.jpg';
 import logistic3 from '../images/logistic3.jpg';

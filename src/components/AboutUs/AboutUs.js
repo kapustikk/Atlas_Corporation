@@ -1,3 +1,6 @@
+import Loader from 'react-loader-spinner';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+
 import s from '../AboutUs/AboutUs.module.css';
 import aboutUs from '../images/about-us.jpg';
 import OurCompanies from './OurCompanies';
@@ -5,7 +8,7 @@ import OurServices from './OurServices';
 import OurBenefits from './OurBenefits';
 import CompletedProjects from './CompletedProjects';
 import AskUs from './AskUs';
-import Map from './Map';
+import Maps from './Map';
 
 import video from '../video/mainVideo.mp4';
 
@@ -14,6 +17,14 @@ export default function AboutUs() {
     <div>
       <div className={s.intro}>
         <div className={s.hero}>
+          <Loader
+            type="TailSpin"
+            color="#fff"
+            height={80}
+            width={80}
+            timeout={3000}
+            className={s.loader}
+          />
           <video src={video} className={s.video} autoPlay muted loop></video>
           {/* <div className={s.titleDiv}>
           <p className={s.title}>We are Atlas company</p>
@@ -68,7 +79,7 @@ export default function AboutUs() {
       <OurBenefits />
       <CompletedProjects />
       <AskUs />
-      <Map />
+      <Maps />
     </div>
   );
 }

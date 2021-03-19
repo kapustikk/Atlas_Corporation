@@ -1,7 +1,7 @@
-.intro {
+/* .intro {
   max-height: 100vh;
   overflow: hidden;
-}
+} */
 
 .hero {
   position: relative;
@@ -28,6 +28,15 @@
   left: 0;
   width: 100vw;
   height: auto;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(92.04deg, #233d97 3.45%, #192550 96.55%), #f0f0f0;
 }
 
 .titleDiv {
@@ -899,17 +908,27 @@ a:focus {
 /* Map */
 
 .mapDiv {
+  position: relative;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   padding-bottom: 120px;
   background-color: white;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 500px;
+  margin-right: 80px;
 }
 
 .mapText {
   display: flex;
   flex-direction: column;
   width: 300px;
+  margin-left: 140px;
 }
 
 .ourWorkText {

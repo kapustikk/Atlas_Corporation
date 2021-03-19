@@ -62,7 +62,7 @@ export default function Footer() {
             </NavLink>
           </nav>
           <p className={s.socialsText}>
-            We in social media:{' '}
+            We are in social media:{' '}
             <a
               href="https://www.linkedin.com/company/atlas-corporation-llc/"
               aria-label="Instagram link"
