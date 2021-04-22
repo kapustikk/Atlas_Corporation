@@ -4,8 +4,14 @@ import Container from './components/Container/Container';
 import AppBar from './components/AppBar/AppBar';
 import Footer from './components/AboutUs/Footer';
 
+const MainPage = lazy(() =>
+  import('./components/AboutUs/AboutUs' /* webpackChunkName: "MainPage" */),
+);
+
 const AboutUs = lazy(() =>
-  import('./components/AboutUs/AboutUs' /* webpackChunkName: "AboutUs" */),
+  import(
+    './components/AboutUsPage/AboutUsPage' /* webpackChunkName: "AboutUsPage" */
+  ),
 );
 const OurCompanies = lazy(() =>
   import(
@@ -83,6 +89,10 @@ function App() {
       <Suspense fallback={<h2>Loading...</h2>}>
         <Switch>
           <Route path="/" exact>
+            <MainPage />
+          </Route>
+
+          <Route path="/about-us" exact>
             <AboutUs />
           </Route>
 

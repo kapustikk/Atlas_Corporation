@@ -12,6 +12,15 @@ const Navigation = () => (
         exact
         to="/"
       >
+        Home
+      </NavLink>
+
+      <NavLink
+        className={s.navlink}
+        activeClassName={s.activeNavlink}
+        exact
+        to="/about-us"
+      >
         About us
       </NavLink>
       <NavLink

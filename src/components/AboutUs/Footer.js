@@ -30,6 +30,15 @@ export default function Footer() {
               exact
               to="/"
             >
+              Home
+            </NavLink>
+
+            <NavLink
+              className={s.navlink}
+              activeClassName={s.activeNavlink}
+              exact
+              to="/"
+            >
               About us
             </NavLink>
             <NavLink

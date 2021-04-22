@@ -67,9 +67,6 @@ export default function AboutUs() {
               <button type="button" className={s.button}>
                 Learn more
               </button>
-              <button type="button" className={s.button}>
-                View companies
-              </button>
             </div>
           </div>
         </div>

@@ -1,0 +1,140 @@
+.aboutUsPage {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #fff;
+}
+
+.info {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+
+.info:nth-child(2n) {
+  margin-bottom: 0;
+}
+
+.aboutUsPhoto {
+  height: 500px;
+}
+
+.textTitle {
+  width: 350px;
+  margin-bottom: 40px;
+  font-family: Proxima Nova;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+
+  color: #24356e;
+  background-image: url(../images/quote.svg);
+  background-repeat: no-repeat;
+  background-size: 90px;
+}
+
+.title {
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.22;
+}
+
+.textBlockOne {
+  width: 450px;
+  /* margin-top: 20px; */
+  margin-left: 100px;
+}
+
+.textBlockTwo {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 100px;
+  margin-right: 90px;
+}
+
+.aboutUsTitle {
+  font-family: Proxima Nova;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1.22;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.78;
+}
+
+.brochures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  background-color: #fff;
+}
+
+.brochuresInfo {
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 1.37;
+  color: #000000;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.brochuresImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.brochuresDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.brochuresImg {
+  width: 200px;
+  margin-right: 60px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brochuresImg:nth-child(2n) {
+  margin-right: 0;
+}
+
+.brochuresImg:hover,
+.brochuresImg:focus {
+  transform: scale(1.1);
+}
+
+.button {
+  width: 170px;
+  height: 50px;
+  margin-left: 15px;
+  color: #e04e49;
+  background-color: white;
+  border: 1px solid #e04e49;
+  margin-top: 30px;
+  outline: none;
+  border-radius: 1px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e04e49;
+  color: white;
+  border: 1px solid white;
+  box-sizing: border-box;
+  transform: scale(1.1);
+}
