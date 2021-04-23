@@ -41,9 +41,9 @@ export default function OurServices() {
                 <img src={supervision} alt="" className={s.itemsPhoto} />
                 <h4 className={s.titleOfOurServices}>Supervision</h4>
                 <p className={s.textOfOurServices}>
-                  Modernization of customer equipment with the ability to
-                  develop / manufacture individual components and replace
-                  control systems ...
+                  Our independent technical control will allow you to complete
+                  the project in a timely manner, avoiding the occurrence of
+                  risks and observing all relevant ...
                 </p>
                 <Link
                   className={s.linkToServices}
@@ -64,9 +64,9 @@ export default function OurServices() {
                 <img src={construction} alt="" className={s.itemsPhoto} />
                 <h4 className={s.titleOfOurServices}>Construction</h4>
                 <p className={s.textOfOurServices}>
-                  Our independent technical control will allow you to complete
-                  the project in a timely manner, avoiding the occurrence of
-                  risks and observing all relevant ...
+                  We boast vast experience in the production of bridge
+                  structures, lifting equipment and related structures,
+                  furnaces, industrial air treatment systems...
                 </p>
                 <Link
                   className={s.linkToServices}
@@ -132,9 +132,9 @@ export default function OurServices() {
                 <img src={assembly} alt="" className={s.itemsPhoto} />
                 <h4 className={s.titleOfOurServices}>Assembly</h4>
                 <p className={s.textOfOurServices}>
-                  Full or partial assembly of new and dismantling of metal
-                  structures and mechanical equipment with their subsequent
-                  restoration and adjustment ...
+                  Complete or partial assembling and dismantling of steel
+                  structures and mechanical machinery, with subsequent
+                  re-assembly and testing...
                 </p>
                 <Link
                   className={s.linkToServices}
@@ -157,8 +157,10 @@ export default function OurServices() {
                   Commissioning & start-up
                 </h4>
                 <p className={s.textOfOurServices}>
-                  Thanks to our services and products, we satisfy the needs of
-                  customers represented in various industries, such as ...
+                   Our commissioning service includes checking the condition of
+                  the equipment, the correct connection of power supply and
+                  hydraulic systems, setting, starting and checking the
+                  operating parameters...
                 </p>
                 <Link
                   className={s.linkToServices}

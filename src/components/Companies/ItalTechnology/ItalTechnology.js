@@ -18,12 +18,13 @@ export default function ItalTechnology() {
           <span className={s.textBlockOne}>
             <h1 className={s.companiesName}>Ital Technology Srl</h1>
             <h4 className={s.text}>
-              Ital Technology SRL is an engineering and construction group of
-              companies which supplies a vast array of solutions to its
-              customers including the revamping, after-sales industrial
-              maintenance and turnkey plant solutions for thermal and hydraulic
-              industrial processes as well as industrial automation and air
-              treatment systems.
+              Ital Technology SRL, a company based in Darfo Boario Terme in the
+              province of Brescia - Italy, is part of a group of companies
+              operating in the construction and engineering sector which aims to
+              provide its customers with revamping and maintenance services.
+              after-sales industrial and turnkey plant solutions for
+              thermo-hydraulic industrial processes, for industrial automation
+              and for air treatment plants.
             </h4>
             <h4 className={s.text}>
               For about 16 years, the company's experts have been managing sites
@@ -49,7 +50,7 @@ export default function ItalTechnology() {
               Based on 16 years of global experience, we offer a comprehensive
               range of tailored services to match your individual specific
               needs: from construction to logistic support, installation of a
-              wide range of technological equipment and metal structures for
+              wide range of industrial machinery and metal structures for
               various industrial applications, and to a supervision service
               covering all stages of the project. Our group operates in the
               steel and mechanical structure industry and boasts extensive

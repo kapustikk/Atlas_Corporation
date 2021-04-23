@@ -18,12 +18,13 @@ export default function AtlasCorporation() {
           <span className={s.textBlockOne}>
             <h1 className={s.companiesName}>Atlas Corporation LLC</h1>
             <h4 className={s.text}>
-              Atlas Corporation LLC is an engineering and construction group of
-              companies which supplies a vast array of solutions to its
-              customers including the revamping, after-sales industrial
-              maintenance and turnkey plant solutions for thermal and hydraulic
-              industrial processes as well as industrial automation and air
-              treatment systems.
+              Atlas Corporation LLC, a company based in Kyiv - Ukraine, is part
+              of a group of companies operating in the construction and
+              engineering sector which aims to provide its customers with
+              revamping services, after-sales industrial maintenance and
+              solutions. of turnkey systems for thermo-hydraulic industrial
+              processes, for industrial automation and for air treatment
+              systems.
             </h4>
             <h4 className={s.text}>
               For about 16 years, the company's experts have been managing sites
@@ -49,7 +50,7 @@ export default function AtlasCorporation() {
               Based on 16 years of global experience, we offer a comprehensive
               range of tailored services to match your individual specific
               needs: from construction to logistic support, installation of a
-              wide range of technological equipment and metal structures for
+              wide range of industrial machinery and metal structures for
               various industrial applications, and to a supervision service
               covering all stages of the project. Our group operates in the
               steel and mechanical structure industry and boasts extensive
