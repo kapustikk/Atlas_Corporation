@@ -1,7 +1,12 @@
+import React from 'react';
 import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
 import mainPhoto from '../images/supervision.jpg';
 import advantagesSvg from '../images/check-circle.svg';
+import photo1 from '../images/supervision/photo1.jpg';
+import photo2 from '../images/supervision/photo2.jpg';
+import photo3 from '../images/supervision/photo3.jpg';
+import photo4 from '../images/supervision/photo4.jpg';
 
 export default function Supervision() {
   return (
@@ -84,6 +89,39 @@ export default function Supervision() {
               Guarantees regarding the implementation of all safety regulations
               at the construction site
             </p>
+          </li>
+        </ul>
+      </div>
+
+      <div className={s.supervisionPhotos}>
+        <ul className={s.listOfImages}>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo1}
+              alt="supervision"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo2}
+              alt="supervision"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo3}
+              alt="supervision"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo4}
+              alt="supervision"
+            />
           </li>
         </ul>
       </div>

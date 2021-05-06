@@ -168,11 +168,17 @@
   padding-bottom: 20px;
   color: #fff;
   background: linear-gradient(104.6deg, #233d97 0%, #192550 100%), #828282;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-family: Proxima Nova;
   font-weight: bold;
   font-size: 22px;
   line-height: 1.81;
+}
+
+.subtitle:hover,
+.subtitle:focus {
+  background: linear-gradient(104.6deg, #233d97 50%, #192550 100%), #828282;
 }
 
 .listOfTypes {
@@ -190,4 +196,45 @@
   font-size: 18px;
   line-height: 1.78;
   margin-top: 35px;
+}
+
+.supervisionPhotos {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.listOfImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.itemsOfImages {
+  margin-right: 40px;
+  margin-bottom: 40px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.itemsOfImages:hover,
+.itemsOfImages:focus {
+  transform: scale(1.1);
+}
+
+.itemsOfImages:nth-child(2n) {
+  margin-right: 0;
+  margin-top: 60px;
+}
+
+.itemsOfImages:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.imagesForServices {
+  width: 500px;
+}
+
+.askUsDiv {
+  padding-bottom: 0;
 }

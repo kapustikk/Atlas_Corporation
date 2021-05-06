@@ -1,6 +1,12 @@
 import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
 import mainPhoto from '../images/assembly.jpg';
+import photo1 from '../images/assembly/photo1.jpg';
+import photo2 from '../images/assembly/photo2.jpg';
+import photo3 from '../images/assembly/photo3.jpg';
+import photo4 from '../images/assembly/photo4.jpg';
+import photo5 from '../images/assembly/photo5.jpg';
+import photo6 from '../images/assembly/photo6.jpg';
 
 export default function Assembly() {
   return (
@@ -52,6 +58,53 @@ export default function Assembly() {
           <li>
             Complete or partial assembling and dismantling of steel structures
             and mechanical machinery, with subsequent re-assembly and testing;
+          </li>
+        </ul>
+      </div>
+
+      <div className={s.supervisionPhotos}>
+        <ul className={s.listOfImages}>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo1}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo2}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo3}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo4}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo5}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo6}
+              alt="construction"
+            />
           </li>
         </ul>
       </div>

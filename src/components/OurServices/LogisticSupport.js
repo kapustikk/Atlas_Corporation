@@ -7,6 +7,10 @@ import logistic3 from '../images/logistic3.jpg';
 import logistic4 from '../images/logistic4.jpeg';
 import logistic5 from '../images/logistic5.JPG';
 import logistic6 from '../images/logistic6.JPG';
+import photo1 from '../images/logistic/photo1.jpg';
+import photo2 from '../images/logistic/photo2.jpg';
+import photo3 from '../images/logistic/photo3.jpg';
+import photo4 from '../images/logistic/photo4.jpg';
 import advantagesSvg from '../images/check-circle.svg';
 
 export default function LogisticSupport() {
@@ -174,6 +178,39 @@ export default function LogisticSupport() {
               Possibility to receive a complete logistic support service under a
               single contract
             </p>
+          </li>
+        </ul>
+      </div>
+
+      <div className={s.supervisionPhotos}>
+        <ul className={s.listOfImages}>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo1}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo2}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo3}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo4}
+              alt="construction"
+            />
           </li>
         </ul>
       </div>

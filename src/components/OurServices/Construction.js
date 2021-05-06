@@ -1,6 +1,12 @@
 import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
 import mainPhoto from '../images/construction.jpg';
+import photo1 from '../images/construction/photo1.jpg';
+import photo2 from '../images/construction/photo2.jpg';
+import photo3 from '../images/construction/photo3.jpg';
+import photo4 from '../images/construction/photo4.jpg';
+import photo5 from '../images/construction/photo5.jpg';
+import photo6 from '../images/construction/photo6.jpg';
 
 export default function Construction() {
   return (
@@ -32,6 +38,53 @@ export default function Construction() {
           </ul>
         </div>
         <img src={mainPhoto} alt="" className={s.photo} />
+      </div>
+
+      <div className={s.supervisionPhotos}>
+        <ul className={s.listOfImages}>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo1}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo2}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo3}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo4}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo5}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo6}
+              alt="construction"
+            />
+          </li>
+        </ul>
       </div>
 
       <AskUs />

@@ -1,6 +1,10 @@
 import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
 import mainPhoto from '../images/after-sales.jpg';
+import photo1 from '../images/aftersales/photo1.jpg';
+import photo2 from '../images/aftersales/photo2.jpg';
+import photo3 from '../images/aftersales/photo3.jpg';
+import photo4 from '../images/aftersales/photo4.jpg';
 import advantagesSvg from '../images/check-circle.svg';
 
 export default function AfterSalesService() {
@@ -59,6 +63,39 @@ export default function AfterSalesService() {
               Improvement in the quality of products (reduction of rejects and
               products rejected due to faults in the production process)
             </p>
+          </li>
+        </ul>
+      </div>
+
+      <div className={s.supervisionPhotos}>
+        <ul className={s.listOfImages}>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo1}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo2}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo3}
+              alt="construction"
+            />
+          </li>
+          <li className={s.itemsOfImages}>
+            <img
+              className={s.imagesForServices}
+              src={photo4}
+              alt="construction"
+            />
           </li>
         </ul>
       </div>
