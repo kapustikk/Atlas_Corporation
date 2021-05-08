@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import OurCompanies from '../AboutUs/OurCompanies';
 import AskUs from '../AboutUs/AskUs';
 import s from '../AboutUsPage/AboutUsPage.module.css';
@@ -9,8 +8,6 @@ import brochureEng from '../images/brochureEng.jpg';
 import brochureItl from '../images/brochureItl.jpg';
 
 export default function AboutUsPage() {
-  const location = useLocation();
-
   return (
     <div>
       <div className={s.aboutUsPage}>
@@ -80,7 +77,14 @@ export default function AboutUsPage() {
               className={s.brochuresImg}
             />
             <button type="button" className={s.button}>
-              Download
+              <a
+                href="http://atlascorporation-llc.com/Atlas-brochure-ENG-web.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className={s.link}
+              >
+                Download
+              </a>
             </button>
           </div>
           <div className={s.brochuresDiv}>
@@ -90,7 +94,14 @@ export default function AboutUsPage() {
               className={s.brochuresImg}
             />
             <button type="button" className={s.button}>
-              Download
+              <a
+                href="http://atlascorporation-llc.com/Ital-Technology-brochure-ITL.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className={s.link}
+              >
+                Download
+              </a>
             </button>
           </div>
         </div>

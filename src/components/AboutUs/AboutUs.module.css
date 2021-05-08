@@ -849,6 +849,7 @@ a:focus {
   color: #e04e49;
   margin-right: 5px;
   margin-left: 5px;
+  font-size: 18px;
 }
 
 .cookies:hover,

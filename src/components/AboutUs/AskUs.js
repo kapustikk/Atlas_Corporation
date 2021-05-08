@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './Modal';
+import Checkbox from './Checkbox';
 import TextField from '@material-ui/core/TextField';
-import Checkbox from '@material-ui/core/Checkbox';
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import s from '../AboutUs/AboutUs.module.css';
 import askUsImg from '../images/help.svg';
@@ -10,7 +9,7 @@ import askUsImg from '../images/help.svg';
 export default class AskUs extends Component {
   state = {
     showModal: false,
-    checked: false,
+    // checked: false,
     query: '',
   };
 
@@ -24,15 +23,6 @@ export default class AskUs extends Component {
     this.setState(state => ({
       checked: !state.checked,
     }));
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-
-    if (this.query.trim() !== '') {
-      toast('Thank you!');
-      return;
-    }
   };
 
   render() {
@@ -68,7 +58,7 @@ export default class AskUs extends Component {
                   <h4 className={s.sendMessage}>
                     Send us a message an our manager will call you soon
                   </h4>
-                  <div className={s.inputArea}>
+                  <form className={s.inputArea}>
                     <TextField
                       id="standard-basic"
                       className={s.textfield}
@@ -82,40 +72,20 @@ export default class AskUs extends Component {
                       type="text"
                     />
                     <TextField
+                      id="standard-basic"
+                      className={s.textfield}
+                      label="Email"
+                      type="email"
+                    />
+                    <TextField
                       id="standard-multiline-static"
                       label="Message"
                       multiline
                       rows={4}
                     />
-                    <div className={s.checkboxDiv}>
-                      <Checkbox
-                        checked={this.checked}
-                        onChange={this.handleChange}
-                        color="primary"
-                        type="checkbox"
-                        name="checkbox"
-                        inputProps={{ 'aria-label': 'primary checkbox' }}
-                        className={s.checkbox}
-                      />
-                      <span className={s.agreement}>
-                        I agree with
-                        <a href="" className={s.cookies}>
-                          privacy policy
-                        </a>
-                        and{' '}
-                        <a href="" className={s.cookies}>
-                          cookies
-                        </a>
-                      </span>
-                      <button
-                        type="submit"
-                        className={s.sendBtn}
-                        onSubmit={this.handleSubmit}
-                      >
-                        Send
-                      </button>
-                    </div>
-                  </div>
+
+                    <Checkbox />
+                  </form>
                 </div>
               </form>
             </div>

@@ -6,7 +6,7 @@ import AtlasPl from '../images/atlas-pol.svg';
 import linkedin from '../images/linkedin.svg';
 import arrow from '../images/arrow.svg';
 import mail from '../images/mail.svg';
-import arrowRight from '../images/arrow-right.svg';
+// import arrowRight from '../images/arrow-right.svg';
 import { animateScroll as scroll } from 'react-scroll';
 
 export default function Footer() {
@@ -159,10 +159,24 @@ export default function Footer() {
 
         <span className={s.policy}>
           <p className={s.policyAndCookies}>
-            Privacy Policy <img src={arrowRight} alt="" />
+            <a
+              href="http://atlascorporation-llc.com/privacy-policy.pdf"
+              className={s.policy}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Privacy Policy
+            </a>
           </p>
           <p className={s.policyAndCookies}>
-            Cookies <img src={arrowRight} alt="" />
+            <a
+              href="http://atlascorporation-llc.com/cookies.pdf"
+              className={s.policy}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Cookies
+            </a>
           </p>
           <p className={s.copyright}>Copyright © 2020. All Right Reserved.</p>
         </span>
