@@ -8,7 +8,7 @@ import OurServices from './OurServices';
 import OurBenefits from './OurBenefits';
 import CompletedProjects from './CompletedProjects';
 import AskUs from './AskUs';
-import Maps from './Map';
+import MapDiv from './Map';
 
 import video from '../video/mainVideo.mp4';
 
@@ -76,7 +76,7 @@ export default function AboutUs() {
       <OurBenefits />
       <CompletedProjects />
       <AskUs />
-      <Maps />
+      <MapDiv />
     </div>
   );
 }

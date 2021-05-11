@@ -1,0 +1,136 @@
+.contactsDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding-top: 120px;
+}
+
+.contacts {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 120px;
+}
+
+.adresses {
+  display: block;
+  width: 600px;
+  height: 400px;
+  margin-left: 750px;
+  margin-top: 50px;
+  box-shadow: 0px 17px 118px rgba(0, 0, 0, 0.1),
+    0px 7.10219px 49.2976px rgba(0, 0, 0, 0.0718854),
+    0px 3.79717px 26.3568px rgba(0, 0, 0, 0.0596107),
+    0px 2.12866px 14.7754px rgba(0, 0, 0, 0.05),
+    0px 1.13052px 7.84712px rgba(0, 0, 0, 0.0403893),
+    0px 0.470434px 3.26536px rgba(0, 0, 0, 0.0281146);
+}
+
+@media screen and (min-width: 2400px) {
+  .adresses {
+    margin-left: 1150px;
+  }
+}
+
+.adresses:hover,
+.adresses:focus {
+  transform: scale(1.1);
+  transition: 300ms ease-in-out;
+}
+
+.adresses:not(:hover) {
+  transition: 300ms ease-in-out;
+}
+.titleOne {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.22;
+  color: #000;
+  opacity: 0.5;
+
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.titleTwo {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.22;
+
+  margin-left: 60px;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 600px;
+  height: 500px;
+}
+
+@media screen and (min-width: 2400px) {
+  .map {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 1200px;
+    height: 700px;
+  }
+}
+
+.adress {
+  display: flex;
+  width: 600px;
+  margin-left: 25px;
+}
+
+.listOfAdresses {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 0;
+}
+
+.itemOfAdresses {
+  width: 250px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.itemOfAdresses:nth-child(3n) {
+  margin-top: 50px;
+}
+
+.telephone {
+  width: 250px;
+  height: 10px;
+  font-family: Proxima Nova;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 200%;
+
+  color: #959595;
+}
+
+.tel {
+  color: #959595;
+}
+
+.mailSvg {
+  margin-right: 10px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+}

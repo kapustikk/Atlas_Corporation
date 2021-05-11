@@ -134,6 +134,12 @@ a:focus {
   margin-top: 90px;
 }
 
+@media screen and (min-width: 1441px) {
+  .textAboutUsDiv {
+    padding-left: 160px;
+  }
+}
+
 .moreAboutTitle {
   font-family: Proxima Nova;
   font-style: normal;
@@ -199,6 +205,12 @@ a:focus {
   margin-right: 50px;
 }
 
+@media screen and (min-width: 1441px) {
+  .ourCompaniesTitle {
+    margin-right: 150px;
+  }
+}
+
 .listOfCompanies {
   display: flex;
   list-style: none;
@@ -253,6 +265,12 @@ a:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1441px) {
+  .companiesSvg {
+    margin-right: 120px;
+  }
+}
+
 .companiesDetails {
   display: flex;
   justify-content: center;
@@ -291,6 +309,12 @@ a:focus {
   padding-bottom: 80px;
 }
 
+@media screen and (min-width: 1441px) {
+  .ourServices {
+    width: 1200px;
+  }
+}
+
 .ourServicesTitle {
   font-family: Proxima Nova;
   font-size: 16px;
@@ -304,6 +328,7 @@ a:focus {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.22;
+  text-align: center;
 }
 
 .listOfOurServices {
@@ -321,10 +346,18 @@ a:focus {
   align-items: center;
   width: 300px;
   height: 425px;
-  margin-right: 20px;
+  margin-right: 30px;
   margin-bottom: 30px;
   background-color: #f2f3f4;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1441px) {
+  .itemOfOurServices {
+    margin-right: 60px;
+    margin-bottom: 60px;
+    height: 450px;
+  }
 }
 
 .itemOfOurServices :nth-child(3n) {
@@ -352,6 +385,12 @@ a:focus {
 .itemsPhoto {
   width: 300px;
   height: 200px;
+}
+
+@media screen and (min-width: 1441px) {
+  .itemsPhoto {
+    height: 230px;
+  }
 }
 
 .titleOfOurServices {
@@ -420,7 +459,7 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   margin-right: auto;
   margin-left: auto;
   margin-top: 80px;
@@ -431,6 +470,12 @@ a:focus {
 .guaranteeFirstBlock {
   width: 450px;
   margin-right: 80px;
+}
+
+@media screen and (min-width: 1441px) {
+  .guaranteeFirstBlock {
+    margin-right: 220px;
+  }
 }
 
 .guaranteeSecondBlock {
@@ -503,6 +548,12 @@ a:focus {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1441px) {
+  .benefitsSvg {
+    margin-right: 100px;
+  }
+}
+
 .benefitsSvg:hover,
 .benefitsSvg:focus {
   transform: translateY(-12px) scale(1.1);
@@ -570,6 +621,7 @@ a:focus {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.22;
+  margin-bottom: 40px;
 }
 
 .listOfProjects {
@@ -587,6 +639,13 @@ a:focus {
   margin-right: 30px;
   margin-bottom: 30px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1441px) {
+  .itemProject {
+    margin-right: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .itemProject:nth-child(2n) {
@@ -676,7 +735,7 @@ a:focus {
 .askUsDiv {
   display: flex;
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   padding-top: 80px;
   /* padding-bottom: 80px; */
   background-color: white;
@@ -693,14 +752,21 @@ a:focus {
 .divForImg {
   display: flex;
   align-items: flex-end;
-  height: 434px;
+  /* height: 434px; */
   margin-left: 80px;
   margin-right: 100px;
 }
 
+@media screen and (min-width: 1441px) {
+  .divForImg {
+    margin-left: 280px;
+    margin-right: 300px;
+  }
+}
+
 .askUsSvg {
   width: 400px;
-  height: 500px;
+  height: 300px;
 }
 
 .textBlock {
@@ -907,24 +973,41 @@ a:focus {
   position: relative;
   display: flex;
   align-items: center;
-  padding-bottom: 120px;
+  padding-top: 180px;
+  padding-bottom: 180px;
   background-color: white;
 }
 
 .map {
   position: absolute;
-  top: 0;
+  top: 20%;
   right: 0;
   width: 800px;
   height: 500px;
-  margin-right: 80px;
+  margin-right: 100px;
+}
+
+@media screen and (min-width: 2400px) {
+  .map {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 1200px;
+  }
 }
 
 .mapText {
   display: flex;
   flex-direction: column;
   width: 300px;
-  margin-left: 140px;
+  margin-left: 120px;
+}
+
+@media screen and (min-width: 1441px) {
+  .mapText {
+    width: 400px;
+    margin-left: 340px;
+  }
 }
 
 .ourWorkText {
@@ -986,6 +1069,12 @@ a:focus {
   height: 20px;
   margin-right: 20px;
   /* cursor: pointer; */
+}
+
+@media screen and (min-width: 1441px) {
+  .footerCompSvg {
+    margin-right: 60px;
+  }
 }
 
 .footerCompSvg:nth-child(3n) {

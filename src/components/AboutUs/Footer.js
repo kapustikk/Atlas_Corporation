@@ -36,8 +36,7 @@ export default function Footer() {
             <NavLink
               className={s.navlink}
               activeClassName={s.activeNavlink}
-              exact
-              to="/"
+              to="/about-us"
             >
               About us
             </NavLink>

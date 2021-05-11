@@ -4,8 +4,8 @@ import ItalTechSvg from '../images/ital.svg';
 import AtlasMain from '../images/atlas.svg';
 import AtlasPl from '../images/polska.svg';
 import AtlasMainHover from '../images/atlasMain.png';
-import ItalHover from '../images/ital.png';
-import AtlasPolskaHover from '../images/polska.png';
+import ItalHover from '../images/italLogo.png';
+import AtlasPolskaHover from '../images/atlasLogo.png';
 
 export default function OurCompanies() {
   const location = useLocation();

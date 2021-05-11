@@ -64,10 +64,8 @@ export default function AboutUsPage() {
       </div>
 
       <div className={s.brochures}>
-        <span>
-          <h4 className={s.brochuresInfo}>Info about us</h4>
-          <h2 className={s.title}>Brochures</h2>
-        </span>
+        <h4 className={s.brochuresInfo}>Info about us</h4>
+        <h2 className={s.title}>Brochures</h2>
 
         <div className={s.brochuresImages}>
           <div className={s.brochuresDiv}>
@@ -106,6 +104,7 @@ export default function AboutUsPage() {
           </div>
         </div>
       </div>
+
       <AskUs />
     </div>
   );

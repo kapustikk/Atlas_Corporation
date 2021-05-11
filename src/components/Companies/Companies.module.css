@@ -1,6 +1,6 @@
 .companyDiv {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #fff;
@@ -28,10 +28,22 @@
   margin-left: 100px;
 }
 
+@media screen and (min-width: 1441px) {
+  .textBlockOne {
+    margin-left: 250px;
+  }
+}
+
 .textBlockTwo {
   width: 400px;
   margin-top: 220px;
   margin-right: 90px;
+}
+
+@media screen and (min-width: 1441px) {
+  .textBlockTwo {
+    margin-right: 250px;
+  }
 }
 
 .companiesName {

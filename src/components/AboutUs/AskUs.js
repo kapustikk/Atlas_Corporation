@@ -4,7 +4,7 @@ import Checkbox from './Checkbox';
 import TextField from '@material-ui/core/TextField';
 import 'react-toastify/dist/ReactToastify.css';
 import s from '../AboutUs/AboutUs.module.css';
-import askUsImg from '../images/help.svg';
+import askUsImg from '../images/help.png';
 
 export default class AskUs extends Component {
   state = {

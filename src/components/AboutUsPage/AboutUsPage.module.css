@@ -1,6 +1,6 @@
 .aboutUsPage {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: #fff;
@@ -49,12 +49,24 @@
   margin-left: 100px;
 }
 
+@media screen and (min-width: 1441px) {
+  .textBlockOne {
+    margin-left: 250px;
+  }
+}
+
 .textBlockTwo {
   display: flex;
   flex-direction: column;
   width: 400px;
   margin-top: 100px;
   margin-right: 90px;
+}
+
+@media screen and (min-width: 1441px) {
+  .textBlockTwo {
+    margin-right: 250px;
+  }
 }
 
 .aboutUsTitle {
@@ -77,6 +89,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: auto;
   padding-top: 120px;
   background-color: #fff;
 }
@@ -92,19 +105,18 @@
 
 .brochuresImages {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-top: 80px;
-}
-
-.brochuresDiv {
-  display: flex;
-  flex-direction: column;
+  margin-left: 140px;
 }
 
 .brochuresImg {
-  width: 200px;
-  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin-right: 180px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -118,8 +130,8 @@
 }
 
 .button {
-  width: 170px;
-  height: 50px;
+  width: 220px;
+  height: 60px;
   margin-left: 15px;
   background-color: white;
   border: 1px solid #e04e49;

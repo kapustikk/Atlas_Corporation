@@ -81,6 +81,10 @@ const Projects = lazy(() =>
   ),
 );
 
+const Contacts = lazy(() =>
+  import('./components/Contacts/Contacts' /* webpackChunkName: "Contacts" */),
+);
+
 function App() {
   return (
     <Container>
@@ -142,6 +146,10 @@ function App() {
 
           <Route path="/projects" exact>
             <Projects />
+          </Route>
+
+          <Route path="/contacts" exact>
+            <Contacts />
           </Route>
         </Switch>
       </Suspense>
