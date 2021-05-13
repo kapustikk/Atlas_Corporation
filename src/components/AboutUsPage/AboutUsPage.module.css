@@ -29,14 +29,14 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .info {
     width: 900px;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 0;
   }
-}
+} */
 
 .info:nth-child(2n) {
   margin-bottom: 0;

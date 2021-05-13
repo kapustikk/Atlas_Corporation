@@ -1323,10 +1323,16 @@ width: 768px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .footerDiv {
     width: 944px;
     height: 300px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footerDiv {
+    width: 100%;
   }
 }
 
