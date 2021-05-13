@@ -11,6 +11,18 @@
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  .firstNav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .burgerMenu {
+    display: none;
+  }
+}
+
 .af {
   display: flex;
   flex-wrap: nowrap;
@@ -60,6 +72,17 @@
 
 .menu {
   margin-top: 20px;
+}
+
+/* @media screen and (min-width: 769px) {
+  .menu {
+    display: none;
+  }
+} */
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
 }
 
 .link {

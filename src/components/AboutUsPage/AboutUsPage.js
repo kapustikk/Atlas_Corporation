@@ -38,9 +38,9 @@ export default function AboutUsPage() {
           </span>
         </div>
         <div className={s.info}>
-          <span className={s.textBlockTwo}>
-            <h2 className={s.title}>Our mission</h2>
-            <h4 className={s.text}>
+          <div className={s.textBlockTwo}>
+            <h2 className={s.titleTwo}>Our mission</h2>
+            <h4 className={s.textTwo}>
               To create a customer care service, implementing projects that
               fully embrace the requirements and individual expectations,
               thereby avoiding the emergence of risks. We present ourselves as a
@@ -48,18 +48,18 @@ export default function AboutUsPage() {
               including procurement, construction, commissioning, start-up,
               management and running of industrial plants and processes.
             </h4>
-            <h4 className={s.text}>
+            <h4 className={s.textTwo}>
               Over 16 years of experience translate into a "know-how" capable of
               solving construction and operational problems, both on the field
               and during after sales periods, managing maintenance and
               production processes.
             </h4>
-          </span>
+          </div>
           <img src={image2} alt=" " className={s.aboutUsPhoto} />
         </div>
       </div>
 
-      <div>
+      <div className={s.ourCompanies}>
         <OurCompanies />
       </div>
 

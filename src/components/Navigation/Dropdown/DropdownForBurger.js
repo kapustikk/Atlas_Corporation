@@ -2,11 +2,10 @@ import { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import arrow from '../images/arrow.svg';
-import arrowRight from '../images/arrow-right.svg';
-import s from '../Navigation/Navigation.module.css';
+// import arrow from '../images/arrow.svg';
+import s from './DropdownMenu.module.css';
 
-export default function DropdownMenuForServices() {
+export default function DropdownMenu() {
   const location = useLocation();
   const [anchorEl, setAnchorEl] = useState(null);
   const ref = useRef(null);
@@ -20,7 +19,7 @@ export default function DropdownMenuForServices() {
   };
 
   return (
-    <div>
+    <div className={s.burgerMenu}>
       <button
         aria-controls="customized-menu"
         ref={ref}
@@ -28,7 +27,10 @@ export default function DropdownMenuForServices() {
         onClick={handleClick}
         className={s.button}
       >
-        <img src={arrow} alt="" className={s.arrow} />
+        <img
+          src="https://img.icons8.com/windows/45/000000/menu--v3.png"
+          alt="icon for burger menu"
+        />
       </button>
 
       <Menu
@@ -38,11 +40,11 @@ export default function DropdownMenuForServices() {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
-        elevation={0}
+        elevation={2}
         getContentAnchorEl={null}
         anchorOrigin={{
           vertical: 'bottom',
-          horizontal: 'center',
+          horizontal: 'left',
         }}
         transformOrigin={{
           vertical: 'top',
@@ -53,84 +55,68 @@ export default function DropdownMenuForServices() {
           <Link
             className={s.link}
             to={{
-              pathname: `/services/supervision`,
+              pathname: `/`,
               state: {
                 from: location.pathname,
               },
             }}
           >
-            Supervision
-            <img src={arrowRight} alt="" className={s.arrowRight} />
+            Home
           </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={s.menuItem}>
           <Link
             className={s.link}
             to={{
-              pathname: `/services/construction`,
+              pathname: `/about-us`,
               state: {
                 from: location.pathname,
               },
             }}
           >
-            Construction
-            <img src={arrowRight} alt="" className={s.arrowRight} />
+            About us
           </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={s.menuItem}>
           <Link
             className={s.link}
             to={{
-              pathname: `/services/after-sales`,
+              pathname: `/services`,
               state: {
                 from: location.pathname,
               },
             }}
           >
-            After-sales service
-            <img src={arrowRight} alt="" className={s.arrowRight} />
+            Services
           </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={s.menuItem}>
           <Link
             className={s.link}
             to={{
-              pathname: `/services/logistic-support`,
+              pathname: `/projects`,
               state: {
                 from: location.pathname,
               },
             }}
           >
-            Logistic support
-            <img src={arrowRight} alt="" className={s.arrowRight} />
+            Projects
           </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={s.menuItem}>
           <Link
             className={s.link}
             to={{
-              pathname: `/services/assembly`,
+              pathname: `/our-companies`,
               state: {
                 from: location.pathname,
               },
             }}
           >
-            Assembly
-            <img src={arrowRight} alt="" className={s.arrowRight} />
+            Companies
           </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose} className={s.menuItem}>
           <Link
             className={s.link}
             to={{
-              pathname: `/services/commissioning-and-start-up`,
+              pathname: `/contacts`,
               state: {
                 from: location.pathname,
               },
             }}
           >
-            Commissioning and start-up
-            <img src={arrowRight} alt="" className={s.arrowRight} />
+            Contacts
           </Link>
         </MenuItem>
       </Menu>

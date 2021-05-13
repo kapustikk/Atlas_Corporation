@@ -2,9 +2,9 @@ import { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import arrow from '../images/arrow.svg';
-import arrowRight from '../images/arrow-right.svg';
-import s from '../Navigation/Navigation.module.css';
+import arrow from '../../images/arrow.svg';
+import arrowRight from '../../images/arrow-right.svg';
+import s from '../../Navigation/Navigation.module.css';
 
 export default function DropdownMenu() {
   const location = useLocation();

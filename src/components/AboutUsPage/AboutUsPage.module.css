@@ -6,11 +6,36 @@
   background-color: #fff;
 }
 
+@media screen and (max-width: 769px) {
+  .aboutUsPage {
+    width: 768px;
+    padding-bottom: 0;
+  }
+}
+
 .info {
   display: flex;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    width: 755px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    width: 900px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
 }
 
 .info:nth-child(2n) {
@@ -19,6 +44,13 @@
 
 .aboutUsPhoto {
   height: 500px;
+}
+
+@media screen and (max-width: 769px) {
+  .aboutUsPhoto {
+    margin-top: 80px;
+    margin-bottom: -180px;
+  }
 }
 
 .textTitle {
@@ -36,11 +68,21 @@
   background-size: 90px;
 }
 
+@media screen and (max-width: 769px) {
+  .textTitle {
+    width: 290px;
+  }
+}
+
 .title {
   font-family: Proxima Nova;
   font-weight: bold;
   font-size: 30px;
   line-height: 1.22;
+}
+
+.titleTwo {
+  composes: title;
 }
 
 .textBlockOne {
@@ -63,6 +105,25 @@
   margin-right: 90px;
 }
 
+@media screen and (max-width: 769px) {
+  .titleTwo {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .textBlockOne {
+    width: 350px;
+    margin-left: 70px;
+  }
+
+  .textBlockTwo {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1441px) {
   .textBlockTwo {
     margin-right: 250px;
@@ -82,6 +143,35 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 1.78;
+}
+
+.textTwo {
+  composes: text;
+}
+
+@media screen and (max-width: 769px) {
+  .aboutUsTitle {
+    width: 250px;
+  }
+
+  .text {
+    width: 300px;
+  }
+
+  .textTwo {
+    width: 600px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titleTwo {
+    text-align: center;
+  }
+  .textTwo {
+    width: 500px;
+    text-align: center;
+  }
 }
 
 .brochures {
@@ -111,6 +201,13 @@
   margin-left: 140px;
 }
 
+@media screen and (max-width: 769px) {
+  .brochuresImages {
+    width: 768px;
+    margin-left: 0;
+  }
+}
+
 .brochuresImg {
   display: flex;
   align-items: center;
@@ -118,6 +215,12 @@
   width: 250px;
   margin-right: 180px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 769px) {
+  .brochuresImg {
+    margin-right: 0;
+  }
 }
 
 .brochuresImg:nth-child(2n) {

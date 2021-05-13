@@ -28,7 +28,7 @@ export default function OurServices() {
         <Swiper
           autoplay={{ delay: 2000 }}
           className={s.swiper}
-          spaceBetween={50}
+          spaceBetween={300}
           slidesPerView={2}
           navigation
           pagination={{ clickable: true }}
