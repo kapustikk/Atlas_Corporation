@@ -12,8 +12,22 @@
   padding-bottom: 80px;
 }
 
+@media screen and (max-width: 1280px) {
+  .firstBlock {
+    flex-direction: column;
+  }
+}
+
 .textBlock {
   width: 480px;
+}
+
+@media screen and (max-width: 1280px) {
+  .textBlock {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .title {
@@ -50,6 +64,13 @@
   margin-left: 80px;
 }
 
+@media screen and (max-width: 1280px) {
+  .photo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1441px) {
   .photo {
     margin-left: 160px;
@@ -74,6 +95,12 @@
   padding: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .advantagesList {
+    width: 600px;
+  }
+}
+
 @media screen and (min-width: 1441px) {
   .advantagesList {
     width: 1200px;
@@ -93,6 +120,15 @@
   font-size: 14px;
   line-height: 1.78;
   background-color: #e5e7ee;
+}
+
+@media screen and (max-width: 1280px) {
+  .advantagesItem {
+    width: 140px;
+    height: 160px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (min-width: 1441px) {
@@ -120,6 +156,20 @@
   width: 50px;
   height: 50px;
   margin-top: 70px;
+}
+
+@media screen and (max-width: 1280px) {
+  .advantagesText {
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .advantagesSvg {
+    width: 35px;
+    height: 35px;
+    margin-top: 20px;
+  }
 }
 
 .specialistsDiv {
@@ -152,12 +202,41 @@
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1280px) {
+  .specialistsDiv {
+    padding-bottom: 20px;
+  }
+
+  .specialistsList {
+    width: 700px;
+  }
+
+  .specialistsPhoto {
+    width: 280px;
+    height: 350px;
+  }
+}
+
 .specialistsItem:nth-child(3n) {
   margin-right: 0;
 }
 
 .specialistsItem:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .specialistsItem:nth-child(3n) {
+    margin-right: 30px;
+  }
+
+  .specialistsItem:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .specialistsItem:nth-last-child(-n + 3) {
+    margin-bottom: 30px;
+  }
 }
 
 .specialistsItem:hover,
@@ -195,6 +274,13 @@
   line-height: 1.81;
 }
 
+@media screen and (max-width: 1280px) {
+  .subtitle {
+    width: 280px;
+    height: 30px;
+  }
+}
+
 .subtitle:hover,
 .subtitle:focus {
   background: linear-gradient(104.6deg, #233d97 50%, #192550 100%), #828282;
@@ -220,6 +306,12 @@
 .supervisionPhotos {
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .supervisionPhotos {
+    width: 700px;
+  }
 }
 
 @media screen and (min-width: 1441px) {
@@ -265,6 +357,12 @@
 
 .imagesForServices {
   width: 500px;
+}
+
+@media screen and (max-width: 1280px) {
+  .imagesForServices {
+    width: 300px;
+  }
 }
 
 .askUsDiv {

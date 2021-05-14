@@ -11,6 +11,12 @@
   margin-right: auto;
 }
 
+@media screen and (max-width: 1280px) {
+  .compleatedProjects {
+    width: 750px;
+  }
+}
+
 .mainTitleProjects {
   font-family: Proxima Nova;
   font-weight: bold;
@@ -47,6 +53,17 @@
 .projectPhoto {
   width: 500px;
   height: 300px;
+}
+
+@media screen and (max-width: 1280px) {
+  .projectPhoto {
+    width: 350px;
+  }
+
+  .itemProject {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .textProjects {
@@ -97,6 +114,14 @@
   line-height: 180%;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .projectText {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
 
 .buttonToProject {
