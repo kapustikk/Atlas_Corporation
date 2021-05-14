@@ -1,3 +1,4 @@
+import { Link, useLocation } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
@@ -13,6 +14,8 @@ import MapDiv from './Map';
 import video from '../video/mainVideo.mp4';
 
 export default function AboutUs() {
+  const location = useLocation();
+
   return (
     <div>
       <div className={s.intro}>
@@ -64,9 +67,19 @@ export default function AboutUs() {
               as industrial automation and air treatment systems.
             </p>
             <div>
-              <button type="button" className={s.button}>
-                Learn more
-              </button>
+              <Link
+                className={s.linkToCompanies}
+                to={{
+                  pathname: `/about-us`,
+                  state: {
+                    from: location.pathname,
+                  },
+                }}
+              >
+                <button type="button" className={s.button}>
+                  Learn more
+                </button>
+              </Link>
             </div>
           </div>
         </div>

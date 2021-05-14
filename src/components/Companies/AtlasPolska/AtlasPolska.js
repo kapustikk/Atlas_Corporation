@@ -16,7 +16,7 @@ export default function AtlasCorporation() {
             className={s.companyPhoto}
           />
           <span className={s.textBlockOne}>
-            <h1 className={s.companiesName}>Atlas Polska SP.Z O.O.</h1>
+            <h1 className={s.companiesName}>Atlas Polska SP. Z O.O.</h1>
             <h4 className={s.text}>
               Atlas Polska Sp. z o.o., a company based in Warsaw - Poland, is
               part of a group of companies operating in the construction and
@@ -43,7 +43,7 @@ export default function AtlasCorporation() {
             </h4>
           </span>
         </div>
-        <div className={s.ItalTechnology}>
+        <div className={s.ItalTechnologyBlockTwo}>
           <span className={s.textBlockTwo}>
             <h4 className={s.text}>
               Based on 16 years of global experience, we offer a comprehensive

@@ -13,6 +13,22 @@
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 1280px) {
+  .ItalTechnology {
+    flex-direction: column-reverse;
+  }
+}
+
+.ItalTechnologyBlockTwo {
+  composes: ItalTechnology;
+}
+
+@media screen and (max-width: 1280px) {
+  .ItalTechnologyBlockTwo {
+    flex-direction: column;
+  }
+}
+
 .ItalTechnology:nth-child(2n) {
   margin-bottom: 0;
 }
@@ -22,10 +38,27 @@
   max-height: 600px;
 }
 
+@media screen and (max-width: 1280px) {
+  .companyPhoto {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .textBlockOne {
   width: 450px;
   margin-top: 80px;
   margin-left: 100px;
+}
+
+@media screen and (max-width: 1280px) {
+  .textBlockOne {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 90px;
+  }
 }
 
 @media screen and (min-width: 1441px) {
@@ -40,6 +73,13 @@
   margin-right: 90px;
 }
 
+@media screen and (max-width: 1280px) {
+  .textBlockTwo {
+    margin-top: 0;
+    margin-bottom: 90px;
+  }
+}
+
 @media screen and (min-width: 1441px) {
   .textBlockTwo {
     margin-right: 250px;
@@ -49,7 +89,7 @@
 .companiesName {
   font-family: Proxima Nova;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 42px;
   line-height: 1.22;
   margin-bottom: 40px;
 }

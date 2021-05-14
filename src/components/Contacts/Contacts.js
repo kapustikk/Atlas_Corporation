@@ -96,7 +96,9 @@ export class Contacts extends Component {
             </address>
           </div>
         </div>
-        <AskUs />
+        <div className={s.askUsBlock}>
+          <AskUs />
+        </div>
       </div>
     );
   }

@@ -15,6 +15,12 @@
   padding-bottom: 120px;
 }
 
+@media screen and (max-width: 1280px) {
+  .contacts {
+    width: 700px;
+  }
+}
+
 .adresses {
   display: block;
   width: 600px;
@@ -27,6 +33,14 @@
     0px 2.12866px 14.7754px rgba(0, 0, 0, 0.05),
     0px 1.13052px 7.84712px rgba(0, 0, 0, 0.0403893),
     0px 0.470434px 3.26536px rgba(0, 0, 0, 0.0281146);
+}
+
+@media screen and (max-width: 1280px) {
+  .adresses {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 2400px) {
@@ -73,6 +87,13 @@
   left: 5%;
   width: 600px;
   height: 500px;
+}
+
+@media screen and (max-width: 1280px) {
+  .map {
+    top: 100%;
+    left: 7%;
+  }
 }
 
 @media screen and (min-width: 2400px) {
@@ -133,4 +154,10 @@
   align-items: center;
   color: #000;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .askUsBlock {
+    margin-top: 500px;
+  }
 }

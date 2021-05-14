@@ -44,7 +44,7 @@ export default function ItalTechnology() {
             </h4>
           </span>
         </div>
-        <div className={s.ItalTechnology}>
+        <div className={s.ItalTechnologyBlockTwo}>
           <span className={s.textBlockTwo}>
             <h4 className={s.text}>
               Based on 16 years of global experience, we offer a comprehensive
