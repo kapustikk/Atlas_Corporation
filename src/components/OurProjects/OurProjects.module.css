@@ -18,7 +18,7 @@
 }
 
 .mainTitleProjects {
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.22;
@@ -101,14 +101,14 @@
   } */
 
 .projectTitle {
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-weight: bold;
   font-size: 20px;
   line-height: 180%;
 }
 
 .projectText {
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-weight: 300;
   font-size: 16px;
   line-height: 180%;

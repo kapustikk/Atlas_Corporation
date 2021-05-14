@@ -56,7 +56,7 @@
 .textTitle {
   width: 350px;
   margin-bottom: 40px;
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
@@ -75,7 +75,7 @@
 }
 
 .title {
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-weight: bold;
   font-size: 30px;
   line-height: 1.22;
@@ -131,7 +131,7 @@
 }
 
 .aboutUsTitle {
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-weight: bold;
   font-size: 45px;
   line-height: 1.22;
@@ -185,7 +185,7 @@
 }
 
 .brochuresInfo {
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-size: 16px;
   line-height: 1.37;
   color: #000000;

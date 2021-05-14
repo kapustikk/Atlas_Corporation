@@ -87,7 +87,7 @@
 }
 
 .companiesName {
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-weight: bold;
   font-size: 42px;
   line-height: 1.22;
@@ -120,7 +120,7 @@
 .telephone {
   width: 250px;
   height: 10px;
-  font-family: Proxima Nova;
+  font-family: Montserrat;
   font-weight: 300;
   font-size: 14px;
   line-height: 200%;
