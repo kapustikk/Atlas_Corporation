@@ -29,14 +29,14 @@
   }
 }
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .info {
     width: 900px;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 0;
   }
-} */
+}
 
 .info:nth-child(2n) {
   margin-bottom: 0;
@@ -149,7 +149,7 @@
   composes: text;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .aboutUsTitle {
     width: 250px;
   }
@@ -164,7 +164,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .titleTwo {
     text-align: center;
   }

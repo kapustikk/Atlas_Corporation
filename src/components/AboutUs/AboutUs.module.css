@@ -373,7 +373,7 @@ a:focus {
   padding-bottom: 80px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .ourServices {
     width: 400px;
     display: flex;
@@ -381,9 +381,9 @@ a:focus {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .ourServices {
-    width: 600px;
+    width: 750px;
   }
 }
 
@@ -416,6 +416,12 @@ a:focus {
   justify-content: center;
   list-style: none;
   padding: 15px;
+}
+
+@media screen and (min-width: 769px) {
+  .listOfOurServices {
+    width: 750px;
+  }
 }
 
 .itemOfOurServices {
@@ -562,6 +568,13 @@ a:focus {
   margin-top: 80px;
   text-align: left;
   background-color: #fff;
+}
+
+@media screen and (max-width: 1279px) {
+  .guarantee {
+    flex-direction: column;
+    margin-top: 0;
+  }
 }
 
 .guaranteeFirstBlock {
@@ -982,6 +995,12 @@ a:focus {
   font-size: 600px;
   color: white;
   opacity: 0.05;
+}
+
+@media screen and (max-width: 1280px) {
+  .letter {
+    display: none;
+  }
 }
 
 /* Modal */
