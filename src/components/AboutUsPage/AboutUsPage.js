@@ -54,8 +54,8 @@ export default function AboutUsPage() {
               and during after sales periods, managing maintenance and
               production processes.
             </h4>
+            <img src={image2} alt=" " className={s.aboutUsPhoto} />
           </div>
-          <img src={image2} alt=" " className={s.aboutUsPhoto} />
         </div>
       </div>
 
