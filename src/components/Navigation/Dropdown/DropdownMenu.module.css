@@ -94,6 +94,12 @@ li:hover {
   transform: none;
 }
 
+@media screen and (max-width: 767px) {
+  .link {
+    width: 375px;
+  }
+}
+
 .button {
   width: 8px;
   margin-right: 35px;

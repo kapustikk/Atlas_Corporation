@@ -50,8 +50,8 @@ export default function AboutUs() {
       </div>
       <div className={s.aboutUsBlock}>
         <div className={s.aboutUs}>
-          <div>
-            <img src={aboutUs} alt="" width="500" />
+          <div className={s.imageAboutUs}>
+            <img src={aboutUs} alt="" width="350" />
           </div>
           <div className={s.textAboutUsDiv}>
             <h3 className={s.moreAboutTitle}>More about Atlas</h3>
