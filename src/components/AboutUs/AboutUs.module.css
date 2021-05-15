@@ -433,7 +433,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .ourServices {
-    width: 400px;
+    width: 750px;
     display: flex;
     justify-content: center;
   }
@@ -630,6 +630,14 @@ a:focus {
   background-color: #fff;
 }
 
+/* @media screen and (max-width: 767px) {
+  .guarantee {
+    width: 350px;
+    flex-direction: column;
+    margin-top: 0;
+  }
+} */
+
 @media screen and (max-width: 1279px) {
   .guarantee {
     flex-direction: column;
@@ -640,6 +648,13 @@ a:focus {
 .guaranteeFirstBlock {
   width: 450px;
   margin-right: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .guaranteeFirstBlock {
+    width: 350px;
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 1441px) {
@@ -663,6 +678,16 @@ a:focus {
   font-family: Gilroy;
   font-size: 14px;
   line-height: 1.78;
+}
+
+@media screen and (max-width: 767px) {
+  .quaranteeTitle {
+    font-size: 36px;
+  }
+
+  .guaranteeSecondBlock {
+    width: 350px;
+  }
 }
 
 /* benefits */
