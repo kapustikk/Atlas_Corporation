@@ -74,7 +74,7 @@
 @media screen and (min-width: 768px) {
   .aboutUsPhoto {
     margin-top: 80px;
-    margin-bottom: -180px;
+    margin-bottom: 80px;
   }
 }
 
@@ -218,7 +218,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .titleTwo {
     text-align: center;
   }
@@ -226,7 +226,7 @@
     width: 500px;
     text-align: center;
   }
-}
+} */
 
 .brochures {
   display: flex;
