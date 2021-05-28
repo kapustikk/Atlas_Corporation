@@ -11,7 +11,13 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 767px) {
+  .compleatedProjects {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .compleatedProjects {
     width: 750px;
   }
@@ -55,7 +61,18 @@
   height: 300px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 767px) {
+  .projectPhoto {
+    width: 380px;
+    height: 300px;
+  }
+
+  .itemProject {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .projectPhoto {
     width: 350px;
   }

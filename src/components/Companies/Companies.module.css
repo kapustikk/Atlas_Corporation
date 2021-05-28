@@ -38,18 +38,32 @@
   max-height: 600px;
 }
 
-@media screen and (max-width: 1280px) {
+.textBlockOne {
+  width: 450px;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 767px) {
   .companyPhoto {
-    width: 500px;
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .textBlockOne {
+    width: 350px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 
-.textBlockOne {
-  width: 450px;
-  margin-top: 80px;
-  margin-left: 100px;
+@media screen and (min-width: 768px) {
+  .companyPhoto {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -73,7 +87,16 @@
   margin-right: 90px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 767px) {
+  .textBlockTwo {
+    width: 350px;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .textBlockTwo {
     margin-top: 0;
     margin-bottom: 90px;
@@ -117,6 +140,15 @@
   background-color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .addressBlock {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .telephone {
   width: 250px;
   height: 10px;
@@ -157,4 +189,10 @@
 
 .svg {
   width: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .svg {
+    width: 150px;
+  }
 }
