@@ -178,11 +178,12 @@
   }
 }
 
-@media screen and (min-width: 1441px) {
+/* @media screen and (min-width: 1440px) {
   .textBlockTwo {
-    margin-right: 250px;
+    width: 1200px;
+     flex-direction: row;
   }
-}
+} */
 
 .aboutUsTitle {
   font-family: Montserrat;
@@ -218,12 +219,12 @@
   }
 }
 
-/* @media screen and (min-width: 768px) {
+/* @media screen and (min-width: 1440px) {
   .titleTwo {
     text-align: center;
   }
   .textTwo {
-    width: 500px;
+    width: 600px;
     text-align: center;
   }
 } */

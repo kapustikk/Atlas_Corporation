@@ -324,6 +324,21 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .specialistsDiv {
+    padding-bottom: 20px;
+  }
+
+  .specialistsList {
+    width: 900px;
+  }
+
+  .specialistsPhoto {
+    width: 320px;
+    height: 380px;
+  }
+}
+
 .specialistsItem:nth-child(3n) {
   margin-right: 0;
 }
@@ -387,9 +402,16 @@
   line-height: 1.81;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .subtitle {
     width: 280px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subtitle {
+    width: 320px;
     height: 30px;
   }
 }
@@ -433,7 +455,7 @@
   }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) {
   .supervisionPhotos {
     width: 1200px;
   }

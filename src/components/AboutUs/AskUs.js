@@ -45,7 +45,7 @@ export default class AskUs extends Component {
               Ask us
             </button>
           </div>
-          <h2 className={s.letter}>A</h2>
+          {/* <h2 className={s.letter}>A</h2> */}
         </div>
 
         {showModal && (

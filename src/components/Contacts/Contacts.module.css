@@ -15,9 +15,31 @@
   padding-bottom: 120px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 767px) {
   .contacts {
-    width: 700px;
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    max-width: 100vh;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    max-width: 100vh;
+    padding-bottom: 0;
+    /* height: 100px; */
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .contacts {
+    max-width: 100vh;
+    padding-bottom: 120px;
   }
 }
 
@@ -35,9 +57,37 @@
     0px 0.470434px 3.26536px rgba(0, 0, 0, 0.0281146);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 767px) {
   .adresses {
-    margin-left: auto;
+    width: 350px;
+    height: 500px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .adresses {
+    width: 600px;
+    height: 450px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .adresses {
+    width: 550px;
+    margin-left: 500px;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .adresses {
+    width: 550px;
+    margin-left: 650px;
     margin-right: auto;
     margin-top: 0;
   }
@@ -45,11 +95,12 @@
 
 @media screen and (min-width: 2400px) {
   .adresses {
-    margin-left: 1150px;
+    width: 650px;
+    margin-left: 1000px;
   }
 }
 
-.adresses:hover,
+/* .adresses:hover,
 .adresses:focus {
   transform: scale(1.1);
   transition: 300ms ease-in-out;
@@ -57,7 +108,7 @@
 
 .adresses:not(:hover) {
   transition: 300ms ease-in-out;
-}
+} */
 .titleOne {
   font-family: Montserrat;
   font-style: normal;
@@ -89,10 +140,35 @@
   height: 500px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 767px) {
+  .map {
+    max-width: 100%;
+    top: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .map {
     top: 100%;
-    left: 7%;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .map {
+    top: 0;
+    left: -15%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .map {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 800px;
+    height: 600px;
   }
 }
 
@@ -100,9 +176,9 @@
   .map {
     position: absolute;
     top: 0;
-    left: -10%;
-    width: 1200px;
-    height: 700px;
+    left: -20%;
+    width: 1000px;
+    height: 600px;
   }
 }
 
@@ -128,6 +204,73 @@
 
 .itemOfAdresses:nth-child(3n) {
   margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .adress {
+    width: 380px;
+    margin-left: 0;
+  }
+
+  .listOfAdresses {
+    display: block;
+  }
+
+  .itemOfAdresses {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .adress {
+    width: 550px;
+    margin-left: 0;
+  }
+
+  .listOfAdresses {
+    width: 550px;
+    /* padding-left: 0; */
+  }
+
+  .itemOfAdresses {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .adress {
+    width: 550px;
+  }
+
+  .listOfAdresses {
+    justify-content: center;
+    width: 550px;
+    padding-left: 0;
+  }
+
+  .itemOfAdresses {
+    margin-right: 30px;
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .adress {
+    width: 650px;
+  }
+
+  .listOfAdresses {
+    justify-content: space-around;
+    width: 650px;
+    padding-left: 30px;
+  }
+
+  .itemOfAdresses {
+    margin-right: 30px;
+    width: 250px;
+  }
 }
 
 .telephone {
