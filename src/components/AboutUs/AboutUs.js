@@ -54,7 +54,7 @@ export default function AboutUs() {
             <img src={aboutUs} alt="" width="350" />
           </div>
           <div className={s.textAboutUsDiv}>
-            <h3 className={s.moreAboutTitle}>More about Atlas</h3>
+            {/* <h3 className={s.moreAboutTitle}>More about Atlas</h3> */}
             <h2 className={s.titleAboutUs}>About us</h2>
             <p className={s.textTitle}>
               A new vision and approach based оп knowledge and experience
