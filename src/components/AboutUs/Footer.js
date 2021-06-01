@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import s from '../AboutUs/AboutUs.module.css';
 import ItalTechSvg from '../images/ital-technology.svg';
 import AtlasMain from '../images/atlasMain.png';
-import AtlasPl from '../images/atlas-pol.svg';
+import AtlasPl from '../images/atlasLogo.png';
 import linkedin from '../images/linkedin.svg';
 import arrow from '../images/arrow.svg';
 import mail from '../images/mail.svg';
