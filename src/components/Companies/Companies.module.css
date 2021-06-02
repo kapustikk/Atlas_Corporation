@@ -142,11 +142,14 @@
 
 @media screen and (max-width: 767px) {
   .addressBlock {
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
+
+  /* .address {
+    margin-left: 40px;
+  } */
 }
 
 .telephone {
@@ -193,6 +196,6 @@
 
 @media screen and (max-width: 767px) {
   .svg {
-    width: 150px;
+    width: 100px;
   }
 }

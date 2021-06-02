@@ -10,7 +10,7 @@ export default function OurBenefits() {
   return (
     <div className={s.benefitsDiv}>
       <div className={s.benefits}>
-        <h3 className={s.titleBenefits}>Why we</h3>
+        {/* <h3 className={s.titleBenefits}>Why we</h3> */}
         <h2 className={s.mainTitleBenefits}>Benefits</h2>
         <div className={s.allBenefits}>
           <div className={s.components}>

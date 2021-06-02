@@ -22,7 +22,7 @@ export default function OurServices() {
 
   return (
     <div className={s.ourServicesDiv}>
-      <h3 className={s.ourServicesTitle}>What we do</h3>
+      {/* <h3 className={s.ourServicesTitle}>What we do</h3> */}
       <h2 className={s.ourServicesMainTitle}>Our Services</h2>
       <div className={s.ourServices}>
         <Swiper

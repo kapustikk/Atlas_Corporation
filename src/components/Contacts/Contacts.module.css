@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 768px) {
   .contacts {
-    max-width: 100vh;
+    /* max-width: 100vh; */
     margin-bottom: 100px;
   }
 }
@@ -78,7 +78,7 @@
 @media screen and (min-width: 1280px) {
   .adresses {
     width: 550px;
-    margin-left: 500px;
+    margin-left: 280px;
     margin-right: auto;
     margin-top: 0;
   }
@@ -87,7 +87,7 @@
 @media screen and (min-width: 1400px) {
   .adresses {
     width: 550px;
-    margin-left: 650px;
+    margin-left: 400px;
     margin-right: auto;
     margin-top: 0;
   }
@@ -158,7 +158,7 @@
 @media screen and (min-width: 1280px) {
   .map {
     top: 0;
-    left: -15%;
+    left: -85%;
   }
 }
 
@@ -166,7 +166,7 @@
   .map {
     position: absolute;
     top: 0;
-    left: -20%;
+    right: 20%;
     width: 800px;
     height: 600px;
   }
@@ -299,7 +299,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .askUsBlock {
     margin-top: 500px;
   }
