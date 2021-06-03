@@ -30,7 +30,7 @@ export class Maps extends Component {
       <div className={s.mapDiv}>
         <div className={s.mapText}>
           <span>
-            <h4 className={s.ourWorkText}>Our work</h4>
+            {/* <h4 className={s.ourWorkText}>Our work</h4> */}
             <h2 className={s.mapMainText}>We work all over the world</h2>
           </span>
           <span>

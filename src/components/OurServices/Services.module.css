@@ -241,7 +241,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .advantagesItem:nth-child(4n) {
+  .advantagesItem:nth-child(5n) {
     margin-right: 10px;
   }
 
