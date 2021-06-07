@@ -9,6 +9,13 @@
   background-color: #fff;
 }
 
+@media screen and (min-width: 2400px) {
+  .allCompaniesDiv {
+    padding-top: 160px;
+    padding-bottom: 220px;
+  }
+}
+
 .title {
   text-align: center;
   margin-bottom: 80px;
@@ -58,6 +65,12 @@
   .company {
     padding: 0;
     width: 350px;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .company {
+    margin-bottom: 80px;
   }
 }
 

@@ -5,6 +5,13 @@
   background-color: #fff;
 }
 
+@media screen and (min-width: 2400px) {
+  .compleatedProjectsDiv {
+    padding-top: 160px;
+    padding-bottom: 260px;
+  }
+}
+
 .compleatedProjects {
   width: 1100px;
   margin-left: auto;
