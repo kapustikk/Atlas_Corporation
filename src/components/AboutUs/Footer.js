@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import s from '../AboutUs/AboutUs.module.css';
 import ItalTechSvg from '../images/ital-technology.svg';
 import AtlasMain from '../images/atlasMain.png';
@@ -10,6 +11,8 @@ import mail from '../images/mail.svg';
 import { animateScroll as scroll } from 'react-scroll';
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -31,7 +34,7 @@ export default function Footer() {
                 exact
                 to="/"
               >
-                Home
+                {t('header__menuHome')}
               </NavLink>
 
               <NavLink
@@ -39,35 +42,35 @@ export default function Footer() {
                 activeClassName={s.activeNavlink}
                 to="/about-us"
               >
-                About us
+                {t('header__menuAbout')}
               </NavLink>
               <NavLink
                 className={s.navlink}
                 activeClassName={s.activeNavlink}
                 to="/services"
               >
-                Services
+                {t('header__menuServices')}
               </NavLink>
               <NavLink
                 className={s.navlink}
                 activeClassName={s.activeNavlink}
                 to="/projects"
               >
-                Projects
+                {t('header__menuProjects')}
               </NavLink>
               <NavLink
                 className={s.navlink}
                 activeClassName={s.activeNavlink}
                 to="/our-companies"
               >
-                Companies
+                {t('header__menuCompanies')}
               </NavLink>
               <NavLink
                 className={s.navlink}
                 activeClassName={s.activeNavlink}
                 to="/contacts"
               >
-                Contacts
+                {t('header__menuContacts')}
               </NavLink>
             </nav>
             <p className={s.socialsText}>
@@ -83,7 +86,7 @@ export default function Footer() {
             </p>
             <span className={s.arrowGoUp} onClick={scrollToTop}>
               <img src={arrow} alt="" />
-              Go up
+              {t('arrow__goUp')}
             </span>
           </div>
         </div>
@@ -93,15 +96,15 @@ export default function Footer() {
             <ul className={s.listOfAdresses}>
               <li className={s.itemOfAdresses}>
                 <p className={s.telephone}>
-                  Ukraine :{' '}
+                  {t('ukraine')} :{' '}
                   <a href="tel:380952811515" className={s.tel}>
-                    38 0952811515
+                    +38 0952811515
                   </a>
                 </p>
                 <p className={s.telephone}>
-                  International :{' '}
+                  {t('international')} :{' '}
                   <a href="tel:393499344027" className={s.tel}>
-                    39 3499344027
+                    +39 3499344027
                   </a>
                 </p>
                 <p>
@@ -116,15 +119,15 @@ export default function Footer() {
               </li>
               <li className={s.itemOfAdresses}>
                 <p className={s.telephone}>
-                  Warsaw :{' '}
+                  {t('warsaw')} :{' '}
                   <a href="tel:48787862472" className={s.tel}>
-                    48 787862472
+                    +48 787862472
                   </a>
                 </p>
                 <p className={s.telephone}>
-                  International :{' '}
+                  {t('international')} :{' '}
                   <a href="tel:393315725689" className={s.tel}>
-                    39 3315725689
+                    +39 3315725689
                   </a>
                 </p>
                 <p>
@@ -136,15 +139,15 @@ export default function Footer() {
               </li>
               <li className={s.itemOfAdresses}>
                 <p className={s.telephone}>
-                  Italy :{' '}
+                  {t('italy')} :{' '}
                   <a href="tel:393387685160" className={s.tel}>
-                    39 3387685160
+                    +39 3387685160
                   </a>
                 </p>
                 <p className={s.telephone}>
-                  International :{' '}
+                  {t('international')} :{' '}
                   <a href="tel:393315725689" className={s.tel}>
-                    39 3315725689
+                    +39 3315725689
                   </a>
                 </p>
                 <p>

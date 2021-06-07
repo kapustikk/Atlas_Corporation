@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import s from '../AboutUs/AboutUs.module.css';
 import ItalTechSvg from '../images/ital.svg';
 import AtlasMain from '../images/atlas.svg';
@@ -9,11 +10,12 @@ import AtlasPolskaHover from '../images/atlasLogo.png';
 
 export default function OurCompanies() {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className={s.ourCompanies}>
       <div className={s.ourCompaniesDiv}>
-        <span className={s.ourCompaniesTitle}>Our companies</span>
+        <span className={s.ourCompaniesTitle}>{t('ourCompanies__title')}</span>
         <ul className={s.listOfCompanies}>
           <li className={s.itemOfCompanies}>
             <Link

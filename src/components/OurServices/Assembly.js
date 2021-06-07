@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
 import mainPhoto from '../images/assembly.jpg';
@@ -9,28 +10,19 @@ import photo5 from '../images/assembly/photo5.jpg';
 import photo6 from '../images/assembly/photo6.jpg';
 
 export default function Assembly() {
+  const { t } = useTranslation();
+
   return (
     <div className={s.supervisionDiv}>
       <div className={s.firstBlock}>
         <div className={s.textBlock}>
-          <h2 className={s.title}>Assembly</h2>
-          <p className={s.text}>
-            We guarantee the best assembly, installation and maintenance
-            services. Assembly and commissioning is the final and most critical
-            stage for new plant system installation. Our experts are ready to
-            ensure the best possible commissioning service, and guarantee their
-            presence until your plant system is completely up and running.
-          </p>
+          <h2 className={s.title}>{t('services__assembly')}</h2>
+          <p className={s.text}>{t('assemblyPage__text')}</p>
 
-          <p className={s.textTitle}>Our range of services includes:</p>
+          <p className={s.textTitle}>{t('assembly__list')}</p>
           <ul className={s.listOfItems}>
-            <li>Installation of machinery and industrial steel structures;</li>
-            <li>
-              Repairs of individual machine parts and components using various
-              methods: gluing, applying metal-polymer composites on a worn
-              surface with subsequent machining, welding with welding
-              electrodes/mig-mag/tig, replacing of parts of worn pieces;
-            </li>
+            <li>{t('assembly__item1')}</li>
+            <li>{t('assembly__item2')}</li>
             <li>
               Installation and commissioning of production line machinery,
               including the construction of necessary metal structures;

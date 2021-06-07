@@ -1,4 +1,5 @@
 import AskUs from '../AboutUs/AskUs';
+import { useTranslation } from 'react-i18next';
 import s from './Services.module.css';
 import mainPhoto from '../images/construction.jpg';
 import photo1 from '../images/construction/photo1.jpg';
@@ -9,32 +10,20 @@ import photo5 from '../images/construction/photo5.jpg';
 import photo6 from '../images/construction/photo6.jpg';
 
 export default function Construction() {
+  const { t } = useTranslation();
+
   return (
     <div className={s.supervisionDiv}>
       <div className={s.firstBlock}>
         <div className={s.textBlock}>
-          <h2 className={s.title}>Construction</h2>
-          <p className={s.text}>
-            With our service and products, we satisfy the demands of different
-            industrial segments such as: metallurgy, cement, glass production
-            and chemical industry, etc. We boast vast experience in the
-            production of bridge structures, lifting equipment and related
-            structures, furnaces, industrial air treatment systems including
-            dedusting systems, pressure vessels and boilers, chimneys and ducts.
-            The production workshops of our partners are all certified in
-            accordance with the requirements of European standards EN 1090-1, EN
-            1090-2, ISO 3834-2, OHSAS 18001:2010, ISO 9001:2009.
-          </p>
-          <p className={s.text}>
-            Each workshop carries out the following processes:
-          </p>
+          <h2 className={s.title}>{t('services__construction')}</h2>
+          <p className={s.text}>{t('constructionPage__text')}</p>
+          <p className={s.text}>{t('processList')}</p>
           <ul className={s.listOfItems}>
-            <li>Control of incoming raw materials and consumables;</li>
-            <li>Operational control and product testing;</li>
-            <li>
-              Quality control testing and acceptance on finished products;
-            </li>
-            <li>Final testing and inspection certificate.</li>
+            <li>{t('processItem1')}</li>
+            <li>{t('processItem2')}</li>
+            <li>{t('processItem3')}</li>
+            <li>{t('processItem4')}</li>
           </ul>
         </div>
         <img src={mainPhoto} alt="" className={s.photo} />

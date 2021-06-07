@@ -93,6 +93,7 @@
   border: 1px solid #e04e49;
   box-sizing: border-box;
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -188,6 +189,12 @@ a:focus {
 }
 
 @media screen and (min-width: 2400px) {
+  /* .aboutUs {
+    display: flex;
+    justify-content: start;
+    
+  } */
+
   .textAboutUsDiv {
     width: 600px;
     padding-left: 60px;
@@ -283,6 +290,12 @@ a:focus {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .ourCompaniesDiv {
+    height: 120px;
+  }
+}
+
 .ourCompaniesTitle {
   font-family: Montserrat;
   font-style: normal;
@@ -300,6 +313,12 @@ a:focus {
   .ourCompaniesDiv {
     flex-direction: row;
     height: 220px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ourCompaniesDiv {
+    height: 120px;
   }
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import AskUs from '../AboutUs/AskUs';
+import { useTranslation } from 'react-i18next';
 import s from './Services.module.css';
 import mainPhoto from '../images/supervision.jpg';
 import advantagesSvg from '../images/check-circle.svg';
@@ -9,86 +10,47 @@ import photo3 from '../images/supervision/photo3.jpg';
 import photo4 from '../images/supervision/photo4.jpg';
 
 export default function Supervision() {
+  const { t } = useTranslation();
+
   return (
     <div className={s.supervisionDiv}>
       <div className={s.firstBlock}>
         <div className={s.textBlock}>
-          <h2 className={s.title}>Supervision</h2>
-          <p className={s.text}>
-            Our independent construction site supervision helps you complete the
-            project on time, avoiding the occurrence of the risks while meeting
-            all relevant regulations and quality standards. To guarantee
-            top-quality execution of work, our technical supervisors carry out
-            quality control procedures at each stage of the project. We have
-            extensive experience and deep knowledge in the field of technical
-            control, providing the following services:
-          </p>
+          <h2 className={s.title}>{t('services__supervision')}</h2>
+          <p className={s.text}>{t('supervisionPage__text')}</p>
           <ul className={s.listOfItems}>
-            <li>
-              Project support from the assembling of metal and steel structures
-              to the commissioning of the machines;
-            </li>
-            <li>
-              Traceability in daily reports of controls and inspections and
-              project progress using project management tools;
-            </li>
-            <li>
-              Inspections of welding seams, thicknesses and dimensions of steel
-              structures;
-            </li>
-            <li>Design review;</li>
-            <li>
-              Inspection of machines, equipment, conveyor systems to detect
-              mechanical defects or malfunctions, assigning workers to conduct
-              relative repairs or adjustments;
-            </li>
-            <li>
-              Daily inspection of the quality of the work and the manpower at
-              the construction site;
-            </li>
-            <li>
-              Report on the progress of delivered engineering-related equipment;
-            </li>
-            <li>
-              Supervision of workers to ensure compliance with all safety
-              regulations;
-            </li>
-            <li>Verification of project documentation conformity. </li>
+            <li>{t('supervisionPage__item1')}</li>
+            <li>{t('supervisionPage__item2')}</li>
+            <li>{t('supervisionPage__item3')}</li>
+            <li>{t('supervisionPage__item4')}</li>
+            <li>{t('supervisionPage__item5')}</li>
+            <li>{t('supervisionPage__item6')}</li>
+            <li>{t('supervisionPage__item7')}</li>
+            <li>{t('supervisionPage__item8')}</li>
+            <li>{t('supervisionPage__item9')}</li>
           </ul>
         </div>
         <img src={mainPhoto} alt="" className={s.photo} />
       </div>
 
       <div className={s.secondBlock}>
-        <h2 className={s.title}>Advantages</h2>
+        <h2 className={s.title}>{t('advantages__title')}</h2>
         <ul className={s.advantagesList}>
           <li className={s.advantagesItem}>
             <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>
-              Support to reach project goals by preventing the occurrence of
-              risks
-            </p>
+            <p className={s.advantagesText}>{t('advantages1')}</p>
           </li>
           <li className={s.advantagesItem}>
             <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>
-              Control over construction projects to ensure they are implemented
-              in an efficient and effective manner
-            </p>
+            <p className={s.advantagesText}>{t('advantages2')}</p>
           </li>
           <li className={s.advantagesItem}>
             <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>
-              Guarantees regarding quality, functioning and conformity of
-              materials, equipment and systems to the applicable standards
-            </p>
+            <p className={s.advantagesText}>{t('advantages3')}</p>
           </li>
           <li className={s.advantagesItem}>
             <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>
-              Guarantees regarding the implementation of all safety regulations
-              at the construction site
-            </p>
+            <p className={s.advantagesText}>{t('advantages4')}</p>
           </li>
         </ul>
       </div>

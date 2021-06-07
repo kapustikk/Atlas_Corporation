@@ -10,10 +10,13 @@ import OurBenefits from './OurBenefits';
 import CompletedProjects from './CompletedProjects';
 import AskUs from './AskUs';
 import MapDiv from './Map';
+import { useTranslation } from 'react-i18next';
 
 import video from '../video/mainVideo.mp4';
 
 export default function AboutUs() {
+  const { t } = useTranslation();
+
   const location = useLocation();
 
   return (
@@ -55,17 +58,9 @@ export default function AboutUs() {
           </div>
           <div className={s.textAboutUsDiv}>
             {/* <h3 className={s.moreAboutTitle}>More about Atlas</h3> */}
-            <h2 className={s.titleAboutUs}>About us</h2>
-            <p className={s.textTitle}>
-              A new vision and approach based оп knowledge and experience
-            </p>
-            <p className={s.text}>
-              We are an engineering and construction group of companies which
-              supplies a vast array of solutions to its customers including the
-              revamping, after-sales industrial maintenance and turnkey plant
-              solutions for thermal and hydraulic industrial processes as well
-              as industrial automation and air treatment systems.
-            </p>
+            <h2 className={s.titleAboutUs}>{t('aboutUs__mainTitle')}</h2>
+            <p className={s.textTitle}>{t('aboutUs__title')}</p>
+            <p className={s.text}> {t('aboutUs__text')} </p>
             <div>
               <Link
                 className={s.linkToCompanies}
@@ -77,7 +72,7 @@ export default function AboutUs() {
                 }}
               >
                 <button type="button" className={s.button}>
-                  Learn more
+                  {t('button__learnMore')}
                 </button>
               </Link>
             </div>

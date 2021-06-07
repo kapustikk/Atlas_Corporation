@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Trans } from 'react-i18next';
 import Modal from './Modal';
 import Checkbox from './Checkbox';
 import TextField from '@material-ui/core/TextField';
@@ -35,14 +36,16 @@ export default class AskUs extends Component {
             <img src={askUsImg} alt="" className={s.askUsSvg} />
           </div>
           <div className={s.textBlock}>
-            <p className={s.mainTitleAsks}>Have a question? Ask us</p>
+            <p className={s.mainTitleAsks}>
+              <Trans i18nKey="askUs__text">Have a question? Ask us</Trans>
+            </p>
             <button
               type="button"
               aria-label="Learn more about us"
               className={s.button}
               onClick={this.toggleModal}
             >
-              Ask us
+              <Trans i18nKey="askUs__button">Ask us</Trans>
             </button>
           </div>
           {/* <h2 className={s.letter}>A</h2> */}

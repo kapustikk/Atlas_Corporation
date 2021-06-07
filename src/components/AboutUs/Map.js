@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import {Client} from "@googlemaps/google-maps-services-js";
 // import axiosInstance from 'axios';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { Trans } from 'react-i18next';
 import api from '../api';
 import s from '../AboutUs/AboutUs.module.css';
 import three from '../images/03.svg';
@@ -31,17 +32,21 @@ export class Maps extends Component {
         <div className={s.mapText}>
           <span>
             {/* <h4 className={s.ourWorkText}>Our work</h4> */}
-            <h2 className={s.mapMainText}>We work all over the world</h2>
+            <h2 className={s.mapMainText}>
+              <Trans i18nKey="map__title">We work all over the world</Trans>
+            </h2>
           </span>
           <span>
             <p className={s.ourWorkDescription}>
               <img src={three} alt="" className={s.amountOurWork} />
-              Central offices
+              <Trans i18nKey="numberOfOffices">Central offices</Trans>
             </p>
             <p className={s.ourWorkDescription}>
               <img src={thirtyfour} alt="" className={s.amountOurWork} />
-              Countries in which we have gained practical experience and every
-              year their number is growing
+              <Trans i18nKey="numberOfCountries">
+                Countries in which we have gained practical experience and every
+                year their number is growing
+              </Trans>
             </p>
           </span>
         </div>

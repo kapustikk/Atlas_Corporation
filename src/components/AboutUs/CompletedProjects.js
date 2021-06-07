@@ -1,19 +1,21 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import s from '../AboutUs/AboutUs.module.css';
 import project1 from '../images/forProject1.jpg';
 import project2 from '../images/forProject2.jpg';
 import project3 from '../images/forProject3.jpg';
 import project4 from '../images/forProject4.jpg';
-import arrowRightForDetails from '../images/arrowRightForDetails.svg';
+// import arrowRightForDetails from '../images/arrowRightForDetails.svg';
 
 export default function CompletedProjects() {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className={s.compleatedProjectsDiv}>
       <div className={s.compleatedProjects}>
-        <h3 className={s.titleProjects}>Our work</h3>
-        <h2 className={s.mainTitleProjects}>Completed projects</h2>
+        {/* <h3 className={s.titleProjects}>Our work</h3> */}
+        <h2 className={s.mainTitleProjects}>{t('projects__title')}</h2>
         <ul className={s.listOfProjects}>
           <li className={s.itemProject}>
             <img
@@ -114,7 +116,7 @@ export default function CompletedProjects() {
           }}
         >
           <button type="button" className={s.button}>
-            All projects
+            {t('button__allProjects')}
           </button>
         </Link>
       </div>

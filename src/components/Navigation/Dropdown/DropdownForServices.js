@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import arrow from '../../images/arrow.svg';
@@ -7,6 +8,7 @@ import arrowRight from '../../images/arrow-right.svg';
 import s from '../../Navigation/Navigation.module.css';
 
 export default function DropdownMenuForServices() {
+  const { t } = useTranslation();
   const location = useLocation();
   const [anchorEl, setAnchorEl] = useState(null);
   const ref = useRef(null);
@@ -59,7 +61,7 @@ export default function DropdownMenuForServices() {
               },
             }}
           >
-            Supervision
+            {t('services__supervision')}
             <img src={arrowRight} alt="" className={s.arrowRight} />
           </Link>
         </MenuItem>
@@ -73,7 +75,7 @@ export default function DropdownMenuForServices() {
               },
             }}
           >
-            Construction
+            {t('services__construction')}
             <img src={arrowRight} alt="" className={s.arrowRight} />
           </Link>
         </MenuItem>
@@ -87,7 +89,7 @@ export default function DropdownMenuForServices() {
               },
             }}
           >
-            After-sales service
+            {t('services__afterSales')}
             <img src={arrowRight} alt="" className={s.arrowRight} />
           </Link>
         </MenuItem>
@@ -101,7 +103,7 @@ export default function DropdownMenuForServices() {
               },
             }}
           >
-            Logistic support
+            {t('services__logisticSupport')}
             <img src={arrowRight} alt="" className={s.arrowRight} />
           </Link>
         </MenuItem>
@@ -115,7 +117,7 @@ export default function DropdownMenuForServices() {
               },
             }}
           >
-            Assembly
+            {t('services__assembly')}
             <img src={arrowRight} alt="" className={s.arrowRight} />
           </Link>
         </MenuItem>
@@ -129,7 +131,7 @@ export default function DropdownMenuForServices() {
               },
             }}
           >
-            Commissioning and start-up
+            {t('services__commissioning')}
             <img src={arrowRight} alt="" className={s.arrowRight} />
           </Link>
         </MenuItem>

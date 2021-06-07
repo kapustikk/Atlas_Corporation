@@ -1,9 +1,16 @@
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import DropdownMenu from './Dropdown/DropdownMenu';
 import DropdownMenuForServices from './Dropdown/DropdownForServices';
 import s from '../Navigation/Navigation.module.css';
 
 function Navigation() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = language => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <nav className={s.nav}>
       <div className={s.firstNav} id="navigation">
@@ -13,7 +20,7 @@ function Navigation() {
           exact
           to="/"
         >
-          Home
+          {t('header__menuHome')}
         </NavLink>
 
         <NavLink
@@ -22,14 +29,14 @@ function Navigation() {
           exact
           to="/about-us"
         >
-          About us
+          {t('header__menuAbout')}
         </NavLink>
         <NavLink
           className={s.navlink}
           activeClassName={s.activeNavlink}
           to="/services"
         >
-          Services
+          {t('header__menuServices')}
         </NavLink>
         <DropdownMenuForServices />
         <NavLink
@@ -37,14 +44,14 @@ function Navigation() {
           activeClassName={s.activeNavlink}
           to="/projects"
         >
-          Projects
+          {t('header__menuProjects')}
         </NavLink>
         <NavLink
           className={s.navlink}
           activeClassName={s.activeNavlink}
           to="/our-companies"
         >
-          Companies
+          {t('header__menuCompanies')}
         </NavLink>
         <DropdownMenu />
         <NavLink
@@ -52,18 +59,17 @@ function Navigation() {
           activeClassName={s.activeNavlink}
           to="/contacts"
         >
-          Contacts
+          {t('header__menuContacts')}
         </NavLink>
       </div>
 
       <div className={s.secondNav}>
-        <NavLink
-          className={s.navlink}
-          activeClassName={s.activeNavlink}
-          to="/language"
-        >
-          ENG
-        </NavLink>
+        <button onClick={() => changeLanguage('en')} className={s.navButton}>
+          EN
+        </button>
+        <button onClick={() => changeLanguage('it')} className={s.navButton}>
+          IT
+        </button>
       </div>
     </nav>
   );
