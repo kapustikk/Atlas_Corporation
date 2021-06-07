@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import AskUs from '../AboutUs/AskUs';
 import s from '../AboutUs/AboutUs.module.css';
 import logistic from '../images/logistic.jpg';
@@ -10,20 +11,19 @@ import supervision from '../images/supervisionMainPage.jpg';
 
 export default function OurServices() {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <div className={s.ourServicesDiv}>
-      <h2 className={s.ourServicesMainTitle}>Services</h2>
+      <h2 className={s.ourServicesMainTitle}>{t('ourServices__title')}</h2>
       <div className={s.ourServices}>
         <ul className={s.listOfOurServices}>
           <li className={s.itemOfOurServices}>
             <img src={supervision} alt="" className={s.itemsPhoto} />
-            <h4 className={s.titleOfOurServices}>Supervision</h4>
-            <p className={s.textOfOurServices}>
-              Our independent technical control will allow you to complete the
-              project in a timely manner, avoiding the occurrence of risks and
-              observing all relevant ...
-            </p>
+            <h4 className={s.titleOfOurServices}>
+              {t('services__supervision')}
+            </h4>
+            <p className={s.textOfOurServices}>{t('supervision__text')}</p>
             <Link
               className={s.linkToServices}
               to={{
@@ -33,17 +33,15 @@ export default function OurServices() {
                 },
               }}
             >
-              Details
+              {t('details')}
             </Link>
           </li>
           <li className={s.itemOfOurServices}>
             <img src={construction} alt="" className={s.itemsPhoto} />
-            <h4 className={s.titleOfOurServices}>Construction</h4>
-            <p className={s.textOfOurServices}>
-              We boast vast experience in the production of bridge structures,
-              lifting equipment and related structures, furnaces, industrial air
-              treatment systems...
-            </p>
+            <h4 className={s.titleOfOurServices}>
+              {t('services__construction')}
+            </h4>
+            <p className={s.textOfOurServices}>{t('construction__text')}</p>
             <Link
               className={s.linkToServices}
               to={{
@@ -53,16 +51,16 @@ export default function OurServices() {
                 },
               }}
             >
-              Details
+              {t('details')}
             </Link>
           </li>
           <li className={s.itemOfOurServices}>
             <img src={afterSales} alt="" className={s.itemsPhoto} />
-            <h4 className={s.titleOfOurServices}>After-sales service</h4>
-            <p className={s.textOfOurServices}>
-              We provide after-sales service in several ways, Periodic
-              maintenance (periodic inspection) ...
-            </p>
+            <h4 className={s.titleOfOurServices}>
+              {' '}
+              {t('services__afterSales')}
+            </h4>
+            <p className={s.textOfOurServices}>{t('afterSales__text')}</p>
             <Link
               className={s.linkToServices}
               to={{
@@ -72,16 +70,15 @@ export default function OurServices() {
                 },
               }}
             >
-              Details
+              {t('details')}
             </Link>
           </li>
           <li className={s.itemOfOurServices}>
             <img src={logistic} alt="" className={s.itemsPhoto} />
-            <h4 className={s.titleOfOurServices}>Logistic support</h4>
-            <p className={s.textOfOurServices}>
-              Using free tangible assets and the high mobilization readiness of
-              our specialists, we have developed a new business solution ...
-            </p>
+            <h4 className={s.titleOfOurServices}>
+              {t('services__logisticSupport')}
+            </h4>
+            <p className={s.textOfOurServices}>{t('logisticSupport__text')}</p>
             <Link
               className={s.linkToServices}
               to={{
@@ -91,17 +88,13 @@ export default function OurServices() {
                 },
               }}
             >
-              Details
+              {t('details')}
             </Link>
           </li>
           <li className={s.itemOfOurServices}>
             <img src={assembly} alt="" className={s.itemsPhoto} />
-            <h4 className={s.titleOfOurServices}>Assembly</h4>
-            <p className={s.textOfOurServices}>
-              Complete or partial assembling and dismantling of steel structures
-              and mechanical machinery, with subsequent re-assembly and
-              testing...
-            </p>
+            <h4 className={s.titleOfOurServices}>{t('services__assembly')}</h4>
+            <p className={s.textOfOurServices}>{t('assembly__text')}</p>
             <Link
               className={s.linkToServices}
               to={{
@@ -111,18 +104,16 @@ export default function OurServices() {
                 },
               }}
             >
-              Details
+              {t('details')}
             </Link>
           </li>
           <li className={s.itemOfOurServices}>
             <img src={commissioning} alt="" className={s.itemsPhoto} />
-            <h4 className={s.titleOfOurServices}>Commissioning & start-up</h4>
-            <p className={s.textOfOurServices}>
-               Our commissioning service includes checking the condition of the
-              equipment, the correct connection of power supply and hydraulic
-              systems, setting, starting and checking the operating
-              parameters...
-            </p>
+            <h4 className={s.titleOfOurServices}>
+              {' '}
+              {t('services__commissioning')}
+            </h4>
+            <p className={s.textOfOurServices}> {t('commissioning__text')}</p>
             <Link
               className={s.linkToServices}
               to={{
@@ -132,7 +123,7 @@ export default function OurServices() {
                 },
               }}
             >
-              Details
+              {t('details')}
             </Link>
           </li>
         </ul>

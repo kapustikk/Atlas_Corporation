@@ -278,7 +278,7 @@ export default function OurServices() {
         }}
       >
         <button type="button" className={s.buttonServices}>
-          All services
+          {t('services__button')}
         </button>
       </Link>
     </div>

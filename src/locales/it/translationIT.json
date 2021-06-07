@@ -27,6 +27,7 @@
   "assembly__text": "Montaggio e smontaggio parziale o totale di carpenteria metallica e macchinari con successivo riassemblaggio e controllo...",
   "services__commissioning": "Messa in funzione & start up",
   "commissioning__text": "La messa in funzione implica il collaudo di tutti i machinari per garantirne il corretto funzionamento. Il nostro servizio di messa in funzione include il controllo dello stato dei macchinari...",
+  "services__button": "Tutti i servizi",
 
   "benefits__title": "Benefici",
   "benefits__professionalism": "La competenza professionale",
@@ -105,5 +106,36 @@
   "advantages__logistic7": "Consegna in stabilimento",
   "advantages__logistic8": "Conformità alle norme di qualità europee",
   "advantages__logistic9": "Opportunità di risparmio di tempo e di denaro",
-  "advantages__logistic10": "Possibilità di ricevere un servizio di supporto logistico completo con un unico contratto"
+  "advantages__logistic10": "Possibilità di ricevere un servizio di supporto logistico completo con un unico contratto",
+
+  "assemblyPage__text": "Garantiamo i migliori servizi di montaggio, installazione e manutenzione. La nostra società effettua tutti i tipi di montaggio e di installazione con attrezzi ed attrezzature efficaci. Il montaggio e la messa in funzione rappresentano le fasi finali e le più critiche per l’installazione di nuovi impianti. I nostri esperti sono pronti a garantirne il miglior avviamento, assicurando la loro presenza fino al corretto funzionamento del vostro impianto.",
+  "assembly__list": "L’offerta dei servizi include:",
+  "assembly__item1": "Installazione di macchinari e strutture metalliche industriali;",
+  "assembly__item2": "Riparazione di singoli pezzi e di componenti macchina con vari metodi: incollaggio, applicazione di  materiali compositi in metallo polimero su una superficie usurata con successiva lavorazione di macchina, saldatura a elettrodo/mig-mag/tig, sostituzione di parti di pezzi usurati;",
+  "assembly__item3": "Installazione e messa in funzione di macchinari di linee di produzione, inclusa la costruzione delle strutture metalliche necessarie;",
+  "assembly__item4": "Revisione dei machinari del cliente con possibile sostituzione di cuscinetti obsoleti, danneggiati e usurati,  guide, guarnizioni in gomma, sensori, cavi elettrici, attrezzatura elettrica ed elettronica;",
+  "assembly__item5": "Ammodernamento dei macchinari del cliente con lo sviluppo e la costruzione di singole unità e la sostituzione dei sistemi di controllo;",
+  "assembly__item6": "Posa di tubazioni",
+  "assembly__Item": "Montaggio e smontaggio parziale o totale di carpenteria metallica e macchinari con successivo riassemblaggio e controllo;",
+
+  "startUpPage__text1": "La messa in funzione implica il collaudo di tutti i machinari per garantirne il corretto funzionamento. Il nostro servizio di messa in funzione include il controllo dello stato dei macchinari, il corretto collegamento dell’alimentazione e degli impianti idraulici, l’impostazione, l’avviamento e il controllo dei parametri di lavoro, la verifica del funzionamento dell’impianto, la corrispondenza alla pressione, alla temperatura e al flusso impostati oltre alla corrispondenza allo stato di fase dell’ambiente analizzato. Questo lavoro garantisce il corretto funzionamento a lungo termine dell’impianto ed elimina le difficoltà di manutenzione delle macchine.",
+  "startUpPage__text2": "La multisfaccettatura della società permette di eseguire lavori di varia complessità, forte di un’esperienza pluriennale nel settore delle carpenteria meccanica industriale. Seguiamo sempre le istruzioni dei nostri clienti per soddisfare al meglio le loro esigenze.",
+
+  "italTech__text1": "Ital Technology SRL, azienda  con sede in Darfo Boario Terme nella provincia di Brescia - Italia, fa’ parte di un gruppo di società che opera nel settore delle costruzioni e dell’engineering che ha lo scopo di fornire ai propri clienti  servizi di revamping, manutenzioni industriali post-vendita e  soluzioni di impianti chiavi in mano per processi industriali termo-idraulici, per l’automazione industriale e per impianti di trattamento dell’aria.",
+  "italTech__text2": "Da circa 16 anni gli esperti della società gestiscono cantieri per la costruzione di nuove strutture e coordinano il processo di realizzazione di opere meccaniche fornendo anche lavori di riparazione e manutenzione tecnica dei siti.",
+  "italTech__text3": "L’intento delle nostre 3 società è quello di soddisfare le esigenze sempre crescenti dei clienti e di occupare una posizione strategica nelle diverse aree del mondo:",
+  "italTech__text4": "Con 16 anni di esperienza a livello mondiale, offriamo una gamma completa di servizi personalizzati per soddisfare le vostre esigenze specifiche: dalla costruzione, al supporto logistico, all’installazione di un’ampia gamma di attrezzature tecnologiche e di strutture metalliche per diverse applicazioni industriali, al servizio di supervisione durante tutte le fasi del progetto. Il nostro gruppo attivo nel settore della carpenteria meccanica e metallica ha una grande esperienza nella realizzazione di progetti di costruzione e di manutenzione su piccola e grande scala.",
+  "italTech__text5": "Con la professionalità del nostro personale, le innovazioni nei processi produttivi e la responsabilità nei confronti dei nostri clienti forniamo un servizio di prim’ordine in stretta conformità alle norme di qualità europee nel rispetto delle  esigenze dei clienti.",
+
+  "atlasCorp__text1": "Atlas Corporation LLC, azienda  con sede in Kiev - Ucraina, fa’ parte di un gruppo di società che opera nel settore delle costruzioni e dell’engineering che ha lo scopo di fornire ai propri clienti  servizi di revamping, manutenzioni industriali post-vendita e  soluzioni di impianti chiavi in mano per processi industriali termo-idraulici, per l’automazione industriale e per impianti di trattamento dell’aria.",
+  "atlasCorp__text2": "Da circa 16 anni gli esperti della società gestiscono cantieri per la costruzione di nuove strutture e coordinano il processo di realizzazione di opere meccaniche fornendo anche lavori di riparazione e manutenzione tecnica dei siti.",
+  "atlasCorp__text3": "L’intento delle nostre 3 società è quello di soddisfare le esigenze sempre crescenti dei clienti e di occupare una posizione strategica nelle diverse aree del mondo:",
+  "atlasCorp__text4": "Con 16 anni di esperienza a livello mondiale, offriamo una gamma completa di servizi personalizzati per soddisfare le vostre esigenze specifiche: dalla costruzione, al supporto logistico, all’installazione di un’ampia gamma di attrezzature tecnologiche e di strutture metalliche per diverse applicazioni industriali, al servizio di supervisione durante tutte le fasi del progetto. Il nostro gruppo attivo nel settore della carpenteria meccanica e metallica ha una grande esperienza nella realizzazione di progetti di costruzione e di manutenzione su piccola e grande scala.",
+  "atlasCorp__text5": "Con la professionalità del nostro personale, le innovazioni nei processi produttivi e la responsabilità nei confronti dei nostri clienti forniamo un servizio di prim’ordine in stretta conformità alle norme di qualità europee nel rispetto delle  esigenze dei clienti.",
+
+  "atlasPol__text1": "Atlas Polska SP.Z O.O. , azienda  con sede in Varsavia - Polonia, fa’ parte di un gruppo di società che opera nel settore delle costruzioni e dell’engineering che ha lo scopo di fornire ai propri clienti  servizi di revamping, manutenzioni industriali post-vendita e  soluzioni di impianti chiavi in mano per processi industriali termo-idraulici, per l’automazione industriale e per impianti di trattamento dell’aria.",
+  "atlasPol__text2": "Da circa 16 anni gli esperti della società gestiscono cantieri per la costruzione di nuove strutture e coordinano il processo di realizzazione di opere meccaniche fornendo anche lavori di riparazione e manutenzione tecnica dei siti.",
+  "atlasPol__text3": "L’intento delle nostre 3 società è quello di soddisfare le esigenze sempre crescenti dei clienti e di occupare una posizione strategica nelle diverse aree del mondo:",
+  "atlasPol__text4": "Con 16 anni di esperienza a livello mondiale, offriamo una gamma completa di servizi personalizzati per soddisfare le vostre esigenze specifiche: dalla costruzione, al supporto logistico, all’installazione di un’ampia gamma di attrezzature tecnologiche e di strutture metalliche per diverse applicazioni industriali, al servizio di supervisione durante tutte le fasi del progetto. Il nostro gruppo attivo nel settore della carpenteria meccanica e metallica ha una grande esperienza nella realizzazione di progetti di costruzione e di manutenzione su piccola e grande scala.",
+  "atlasPol__text5": "Con la professionalità del nostro personale, le innovazioni nei processi produttivi e la responsabilità nei confronti dei nostri clienti forniamo un servizio di prim’ordine in stretta conformità alle norme di qualità europee nel rispetto delle  esigenze dei clienti."
 }

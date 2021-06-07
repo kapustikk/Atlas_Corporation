@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import OurServices from '../../AboutUs/OurServices';
 import s from '../Companies.module.css';
 import mail from '../../images/mail.svg';
@@ -6,6 +7,8 @@ import atlasPhoto from '../../images/atlasCorp.jpg';
 import atlasPhoto2 from '../../images/atlasCorp2.jpg';
 
 export default function AtlasCorporation() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className={s.companyDiv}>
@@ -17,52 +20,22 @@ export default function AtlasCorporation() {
           />
           <span className={s.textBlockOne}>
             <h1 className={s.companiesName}>Atlas Corporation LLC</h1>
+            <h4 className={s.text}>{t('atlasCorp__text1')}</h4>
+            <h4 className={s.text}>{t('atlasCorp__text2')}</h4>
             <h4 className={s.text}>
-              Atlas Corporation LLC, a company based in Kyiv - Ukraine, is part
-              of a group of companies operating in the construction and
-              engineering sector which aims to provide its customers with
-              revamping services, after-sales industrial maintenance and
-              solutions. of turnkey systems for thermo-hydraulic industrial
-              processes, for industrial automation and for air treatment
-              systems.
-            </h4>
-            <h4 className={s.text}>
-              For about 16 years, the company's experts have been managing sites
-              for the construction of new buildings and coordinating the
-              processes related to the realization of mechanical works,
-              providing also repair and technical maintenance of the sites.
-            </h4>
-            <h4 className={s.text}>
-              Our 3 companies are committed to meeting the growing demands of
-              our customers and occupying a strategic position in different
-              parts of the world:
+              {t('atlasCorp__text3')}
               <ul>
-                <li>ITAL TECHNOLOGY SRL (Italy)</li>
-                <li>ATLAS CORPORATION LLC (Ukraine)</li>
-                <li>ATLAS POLSKA SP. Z O.O. (Poland)</li>
+                <li>ITAL TECHNOLOGY SRL ({t('italy')})</li>
+                <li>ATLAS CORPORATION LLC ({t('ukraine')})</li>
+                <li>ATLAS POLSKA SP. Z O.O. ({t('warsaw')})</li>
               </ul>
             </h4>
           </span>
         </div>
         <div className={s.ItalTechnologyBlockTwo}>
           <span className={s.textBlockTwo}>
-            <h4 className={s.text}>
-              Based on 16 years of global experience, we offer a comprehensive
-              range of tailored services to match your individual specific
-              needs: from construction to logistic support, installation of a
-              wide range of industrial machinery and metal structures for
-              various industrial applications, and to a supervision service
-              covering all stages of the project. Our group operates in the
-              steel and mechanical structure industry and boasts extensive
-              experience in completing small and large-scale construction and
-              maintenance projects.
-            </h4>
-            <h4 className={s.text}>
-              Through the professionalism of our employees, the innovations in
-              production processes and responsibility towards our customers we
-              provide a first-rate service in strict compliance with European
-              Quality Standards and the requirements of our clients.
-            </h4>
+            <h4 className={s.text}>{t('atlasCorp__text4')}</h4>
+            <h4 className={s.text}>{t('atlasCorp__text5')}</h4>
           </span>
           <img
             src={atlasPhoto2}

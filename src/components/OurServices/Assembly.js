@@ -23,34 +23,19 @@ export default function Assembly() {
           <ul className={s.listOfItems}>
             <li>{t('assembly__item1')}</li>
             <li>{t('assembly__item2')}</li>
-            <li>
-              Installation and commissioning of production line machinery,
-              including the construction of necessary metal structures;
-            </li>
-            <li>
-              Overhaul of the customer's machinery with possible replacement of
-              worn out, damaged and obsolete bearings, guiding elements, rubber
-              seals, sensors, electrical cables, electric power and electronic
-              equipment;
-            </li>
-            <li>
-              Revamping of the customer's machinery with the development and
-              construction of individual units and replacement of control
-              systems;
-            </li>
-            <li>Installation of pipelines.</li>
+            <li>{t('assembly__item3')}</li>
+            <li>{t('assembly__item4')}</li>
+            <li>{t('assembly__item5')}</li>
+            <li>{t('assembly__item6')}</li>
           </ul>
         </div>
         <img src={mainPhoto} alt="" className={s.photo} />
       </div>
 
       <div className={s.secondBlock}>
-        <p className={s.textTitle}>Assembly:</p>
+        <p className={s.textTitle}>{t('services__assembly')}:</p>
         <ul className={s.listOfTypes}>
-          <li>
-            Complete or partial assembling and dismantling of steel structures
-            and mechanical machinery, with subsequent re-assembly and testing;
-          </li>
+          <li>{t('assembly__Item')}</li>
         </ul>
       </div>
 
