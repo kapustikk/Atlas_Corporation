@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding-top: 120px;
 }
 
 .contacts {
@@ -12,25 +11,34 @@
   height: auto; */
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 120px;
 }
 
 @media screen and (max-width: 767px) {
   .contacts {
+    display: flex;
+    flex-direction: column-reverse;
     width: 350px;
+    padding-top: 80px;
+    padding-bottom: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 120px;
+    padding-bottom: 0;
     /* max-width: 100vh; */
-    margin-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts {
-    max-width: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 120px;
     padding-bottom: 0;
     /* height: 100px; */
   }
@@ -39,10 +47,10 @@
 @media screen and (min-width: 1400px) {
   .contacts {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     max-width: 100vh;
-    padding-bottom: 120px;
   }
 }
 
@@ -50,7 +58,7 @@
   display: block;
   width: 600px;
   height: 400px;
-  margin-left: 750px;
+  /* margin-left: 750px; */
   margin-top: 50px;
   box-shadow: 0px 17px 118px rgba(0, 0, 0, 0.1),
     0px 7.10219px 49.2976px rgba(0, 0, 0, 0.0718854),
@@ -90,7 +98,7 @@
 @media screen and (min-width: 1280px) {
   .adresses {
     width: 550px;
-    margin-left: 550px;
+    margin-left: 50px;
     margin-right: auto;
     margin-top: 0;
   }
@@ -98,16 +106,16 @@
 
 @media screen and (min-width: 2400px) {
   .contactsDiv {
-    padding-top: 240px;
+    padding-top: 140px;
   }
 
   .contacts {
-    padding-bottom: 240px;
+    padding-bottom: 140px;
   }
 
   .adresses {
     width: 650px;
-    margin-left: 1000px;
+    margin-left: 300px;
   }
 }
 
@@ -144,53 +152,57 @@
 }
 
 .map {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 5%;
-  width: 600px;
-  height: 500px;
+  left: 5%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 600px;
+  height: 500px; */
 }
 
 @media screen and (max-width: 767px) {
   .map {
     max-width: 100%;
-    top: 100%;
-    left: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .map {
-    top: 100%;
-    left: 0;
-  }
-}
-
-/* @media screen and (min-width: 1280px) {
-  .map {
-    top: 0;
-    left: -85%;
-  }
-} */
-
-@media screen and (min-width: 1280px) {
-  .map {
-    position: absolute;
-    top: 0;
-    left: auto;
-    margin-left: -100px;
-    /* width: 800px; */
-    /* height: 600px; */
   }
 }
 
 @media screen and (min-width: 2400px) {
   .map {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: auto;
+    left: auto; */
     width: 1000px;
     height: 600px;
+  }
+}
+
+/* .mapLayer {
+  width: 1000px !important;
+} */
+
+@media screen and (max-width: 767px) {
+  .mapLayer {
+    width: 350px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mapLayer {
+    width: 600px !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .mapLayer {
+    width: 1000px !important;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .mapLayer {
+    width: 1500px !important;
   }
 }
 
@@ -253,24 +265,25 @@
 
 @media screen and (min-width: 1400px) {
   .adress {
-    width: 550px;
+    width: 600px;
   }
 
   .listOfAdresses {
     justify-content: center;
-    width: 550px;
+    width: 580px;
     padding-left: 0;
   }
 
   .itemOfAdresses {
-    margin-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
     width: 230px;
   }
 }
 
 @media screen and (min-width: 2400px) {
   .adress {
-    width: 650px;
+    width: 700px;
   }
 
   .listOfAdresses {
@@ -280,7 +293,8 @@
   }
 
   .itemOfAdresses {
-    margin-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
     width: 250px;
   }
 }
@@ -311,8 +325,8 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1279px) {
+/* @media screen and (max-width: 1279px) {
   .askUsBlock {
     margin-top: 500px;
   }
-}
+} */

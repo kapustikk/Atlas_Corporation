@@ -1,23 +1,101 @@
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
-import api from '../api';
+// import { MapAjax } from '@syncfusion/ej2-maps';
+// import {
+//     MapsComponent, Inject, ILoadedEventArgs, MapsTheme, LayersDirective, LayerDirective, MarkersDirective, MarkerDirective, Marker, Legend, Zoom, MapsTooltip
+// } from '@syncfusion/ej2-react-maps';
+// import { Browser } from '@syncfusion/ej2-base';
+import {
+  MapsComponent,
+  LayersDirective,
+  LayerDirective,
+  MapsTooltip,
+  MarkersDirective,
+  MarkerDirective,
+  Marker,
+  Zoom,
+  Inject,
+} from '@syncfusion/ej2-react-maps';
+import { Legend, DataLabel } from '@syncfusion/ej2-maps';
+import world_map from './world-map.json';
+// import myMap from './map';
+// import { Map, GoogleApiWrapper } from 'google-maps-react';
+// import api from '../api';
 import AskUs from '../AboutUs/AskUs';
 import s from './Contacts.module.css';
 import mail from '../images/mail.svg';
 
-export class Contacts extends Component {
+export default class Contacts extends Component {
   render() {
     return (
       <div className={s.contactsDiv}>
         <div className={s.contacts}>
           <div className={s.map}>
+            <MapsComponent
+              id="maps"
+              className={s.mapLayer}
+              useGroupingSeparator={true}
+              format="n"
+              zoomSettings={{ enable: true }}
+            >
+              <Inject
+                services={[DataLabel, Legend, Marker, MapsTooltip, Zoom]}
+              />
+              <LayersDirective>
+                <LayerDirective
+                  shapeData={world_map}
+                  shapeDataPath="Country"
+                  shapePropertyPath="name"
+                  tooltipSettings={{
+                    visible: true,
+                    valuePath: 'name',
+                  }}
+                  shapeSettings={{
+                    colorValuePath: 'density',
+                    fill: 'rgb(115,143,199)',
+                  }}
+                >
+                  <MarkersDirective>
+                    <MarkerDirective
+                      visible={true}
+                      dataSource={[
+                        {
+                          name: 'Ukraine',
+                          latitude: '48.383022',
+                          longitude: '31.1828699',
+                        },
+                        {
+                          name: 'Italy',
+                          latitude: '41.29246',
+                          longitude: '12.5736108',
+                        },
+                        {
+                          name: 'Poland',
+                          latitude: '51.9189046',
+                          longitude: '19.1343786',
+                        },
+                      ]}
+                      tooltipSettings={{
+                        visible: true,
+                        valuePath: 'name',
+                      }}
+                      shape="Balloon"
+                      height={15}
+                      width={15}
+                      animationDuration={0}
+                    ></MarkerDirective>
+                  </MarkersDirective>
+                </LayerDirective>
+              </LayersDirective>
+            </MapsComponent>
+          </div>
+          {/* <div className={s.map}>
             <Map
               google={this.props.google}
               zoom={15}
               className={s.myMap}
               initialCenter={{ lat: 9.761927, lng: 79.95244 }}
             />
-          </div>
+          </div> */}
           <div className={s.adresses}>
             <h4 className={s.titleOne}>Find us</h4>
             <h1 className={s.titleTwo}>Contacts</h1>
@@ -48,7 +126,7 @@ export class Contacts extends Component {
                 </li>
                 <li className={s.itemOfAdresses}>
                   <p className={s.telephone}>
-                    Warsaw :{' '}
+                    Poland :{' '}
                     <a href="tel:48787862472" className={s.tel}>
                       48 787862472
                     </a>
@@ -104,6 +182,6 @@ export class Contacts extends Component {
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: api,
-})(Contacts);
+// export default GoogleApiWrapper({
+//   apiKey: api,
+// })(Contacts);
