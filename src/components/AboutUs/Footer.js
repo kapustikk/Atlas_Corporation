@@ -73,17 +73,7 @@ export default function Footer() {
                 {t('header__menuContacts')}
               </NavLink>
             </nav>
-            <p className={s.socialsText}>
-              {/* Our social:{' '} */}
-              <a
-                href="https://www.linkedin.com/company/atlas-corporation-llc/"
-                aria-label="Instagram link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={linkedin} alt="" className={s.linkedin} />
-              </a>
-            </p>
+
             <span className={s.arrowGoUp} onClick={scrollToTop}>
               <img src={arrow} alt="" />
               {t('arrow__goUp')}
@@ -164,6 +154,16 @@ export default function Footer() {
           </address>
 
           <div className={s.policy}>
+            <p className={s.socialsText}>
+              <a
+                href="https://www.linkedin.com/company/atlas-corporation-llc/"
+                aria-label="Instagram link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={linkedin} alt="" className={s.linkedin} />
+              </a>
+            </p>
             <p className={s.policyAndCookies}>
               <a
                 href="http://atlascorporation-llc.com/privacy-policy.pdf"

@@ -1671,7 +1671,7 @@ a:focus {
   .mapText {
     flex-direction: column;
     width: 400px;
-    margin-left: 140px;
+    margin-left: 300px;
   }
 }
 
@@ -1825,6 +1825,10 @@ width: 768px;
 }
 
 @media screen and (min-width: 1280px) {
+  .footerNavigation {
+    padding-left: 60px;
+  }
+
   .footerCompSvg {
     width: 80px;
     margin-right: 60px;
@@ -1918,10 +1922,11 @@ width: 768px;
 @media screen and (min-width: 1280px) {
   .navlink {
     font-size: 14px;
+    margin-right: 45px;
   }
 
   .nav {
-    width: 380px;
+    width: 580px;
   }
 }
 
@@ -1981,7 +1986,7 @@ width: 768px;
 .linkedin {
   cursor: pointer;
   width: 30px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 @media screen and (max-width: 767px) {
@@ -1991,6 +1996,12 @@ width: 768px;
     margin-right: 10px;
   }
 }
+
+/* @media screen and (min-width: 1024px) {
+  .linkedin {
+    margin-left: -60px;
+  }
+} */
 
 .arrowGoUp {
   position: fixed;
@@ -2114,6 +2125,26 @@ width: 768px;
   .adressesDiv {
     flex-wrap: nowrap;
   }
+
+  .listOfAdresses {
+    width: 800px;
+  }
+
+  .itemOfAdresses {
+    width: 250px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .listOfAdresses {
+    width: 800px;
+  }
+
+  .itemOfAdresses {
+    width: 280px;
+    margin-right: 50px;
+  }
 }
 
 @media screen and (min-width: 2400px) {
@@ -2188,6 +2219,7 @@ width: 768px;
   .policy {
     width: 200px;
     flex-wrap: wrap;
+    margin-left: -40px;
   }
 }
 
