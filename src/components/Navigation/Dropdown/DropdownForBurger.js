@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 // import arrow from '../images/arrow.svg';
@@ -9,6 +10,7 @@ export default function DropdownMenu() {
   const location = useLocation();
   const [anchorEl, setAnchorEl] = useState(null);
   const ref = useRef(null);
+  const { t } = useTranslation();
 
   const handleClick = e => {
     setAnchorEl(e.currentTarget);
@@ -61,7 +63,7 @@ export default function DropdownMenu() {
               },
             }}
           >
-            Home
+            {t('header__menuHome')}
           </Link>
           <Link
             className={s.link}
@@ -72,7 +74,7 @@ export default function DropdownMenu() {
               },
             }}
           >
-            About us
+            {t('header__menuAbout')}
           </Link>
           <Link
             className={s.link}
@@ -83,7 +85,7 @@ export default function DropdownMenu() {
               },
             }}
           >
-            Services
+            {t('header__menuServices')}
           </Link>
           <Link
             className={s.link}
@@ -94,7 +96,7 @@ export default function DropdownMenu() {
               },
             }}
           >
-            Projects
+            {t('header__menuProjects')}
           </Link>
           <Link
             className={s.link}
@@ -105,7 +107,7 @@ export default function DropdownMenu() {
               },
             }}
           >
-            Companies
+            {t('header__menuCompanies')}
           </Link>
           <Link
             className={s.link}
@@ -116,7 +118,7 @@ export default function DropdownMenu() {
               },
             }}
           >
-            Contacts
+            {t('header__menuContacts')}
           </Link>
         </MenuItem>
       </Menu>

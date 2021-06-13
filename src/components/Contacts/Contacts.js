@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Trans } from 'react-i18next';
 // import { MapAjax } from '@syncfusion/ej2-maps';
 // import {
 //     MapsComponent, Inject, ILoadedEventArgs, MapsTheme, LayersDirective, LayerDirective, MarkersDirective, MarkerDirective, Marker, Legend, Zoom, MapsTooltip
@@ -97,8 +98,10 @@ export default class Contacts extends Component {
             />
           </div> */}
           <div className={s.adresses}>
-            <h4 className={s.titleOne}>Find us</h4>
-            <h1 className={s.titleTwo}>Contacts</h1>
+            {/* <h4 className={s.titleOne}>Find us</h4> */}
+            <h1 className={s.titleTwo}>
+              <Trans i18nKey="header__menuContacts">Contacts</Trans>
+            </h1>
             <address className={s.adress}>
               <ul className={s.listOfAdresses}>
                 <li className={s.itemOfAdresses}>

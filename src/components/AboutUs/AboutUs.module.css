@@ -188,7 +188,7 @@ a:focus {
   }
 }
 
-@media screen and (min-width: 2400px) {
+@media screen and (min-width: 1700px) {
   /* .aboutUs {
     display: flex;
     justify-content: start;
@@ -198,7 +198,7 @@ a:focus {
   .textAboutUsDiv {
     width: 600px;
     padding-left: 60px;
-    margin-right: 460px;
+    margin-right: 360px;
   }
 }
 
