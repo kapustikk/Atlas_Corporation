@@ -1,6 +1,7 @@
 import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import s from '../AboutUs/AboutUs.module.css';
 
 export default function Checkboxes() {
@@ -13,7 +14,7 @@ export default function Checkboxes() {
   const handleSubmit = e => {
     e.preventDefault();
 
-    if (this.query.trim() !== '') {
+    if (this.query.trim() === checked) {
       toast('Thank you!');
       return;
     }

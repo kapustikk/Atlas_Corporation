@@ -1,5 +1,6 @@
 import AskUs from '../AboutUs/AskUs';
 import { useTranslation } from 'react-i18next';
+import Fade from 'react-reveal/Fade';
 import s from './Services.module.css';
 import mainPhoto from '../images/logisticMain.jpg';
 import logistic1 from '../images/logistic1.JPG';
@@ -19,177 +20,187 @@ export default function LogisticSupport() {
 
   return (
     <div className={s.supervisionDiv}>
-      <div className={s.firstBlock}>
-        <div className={s.textBlock}>
-          <h2 className={s.title}>{t('services__logisticSupport')}</h2>
-          <p className={s.text}>{t('logisticPage__text')}</p>
+      <Fade clear>
+        <div className={s.firstBlock}>
+          <div className={s.textBlock}>
+            <h2 className={s.title}>{t('services__logisticSupport')}</h2>
+            <p className={s.text}>{t('logisticPage__text')}</p>
+          </div>
+          <img src={mainPhoto} alt="" className={s.photo} />
         </div>
-        <img src={mainPhoto} alt="" className={s.photo} />
-      </div>
+      </Fade>
 
-      <div className={s.specialistsDiv}>
-        <h2 className={s.title}>{t('specialists__title')}</h2>
-        <ul className={s.specialistsList}>
-          <li className={s.specialistsItem}>
-            <div className={s.specialistsBlock}>
-              <img
-                src={logistic1}
-                alt="Instalers"
-                className={s.specialistsPhoto}
-              />
-              <div className={s.subtitleDiv}>
-                <h3 className={s.subtitle}>{t('specialist__item1')}</h3>
+      <Fade clear>
+        <div className={s.specialistsDiv}>
+          <h2 className={s.title}>{t('specialists__title')}</h2>
+          <ul className={s.specialistsList}>
+            <li className={s.specialistsItem}>
+              <div className={s.specialistsBlock}>
+                <img
+                  src={logistic1}
+                  alt="Instalers"
+                  className={s.specialistsPhoto}
+                />
+                <div className={s.subtitleDiv}>
+                  <h3 className={s.subtitle}>{t('specialist__item1')}</h3>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li className={s.specialistsItem}>
-            <div className={s.specialistsBlock}>
-              <img
-                src={logistic2}
-                alt="Instalers"
-                className={s.specialistsPhoto}
-              />
-              <div className={s.subtitleDiv}>
-                <h3 className={s.subtitle}>{t('specialist__item2')}</h3>
+            <li className={s.specialistsItem}>
+              <div className={s.specialistsBlock}>
+                <img
+                  src={logistic2}
+                  alt="Instalers"
+                  className={s.specialistsPhoto}
+                />
+                <div className={s.subtitleDiv}>
+                  <h3 className={s.subtitle}>{t('specialist__item2')}</h3>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li className={s.specialistsItem}>
-            <div className={s.specialistsBlock}>
-              <img
-                src={logistic3}
-                alt="Instalers"
-                className={s.specialistsPhoto}
-              />
-              <div className={s.subtitleDiv}>
-                <h3 className={s.subtitle}>{t('specialist__item3')}</h3>
+            <li className={s.specialistsItem}>
+              <div className={s.specialistsBlock}>
+                <img
+                  src={logistic3}
+                  alt="Instalers"
+                  className={s.specialistsPhoto}
+                />
+                <div className={s.subtitleDiv}>
+                  <h3 className={s.subtitle}>{t('specialist__item3')}</h3>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li className={s.specialistsItem}>
-            <div className={s.specialistsBlock}>
-              <img
-                src={logistic4}
-                alt="Instalers"
-                className={s.specialistsPhoto}
-              />
-              <div className={s.subtitleDiv}>
-                <h3 className={s.subtitle}>{t('specialist__item4')}</h3>
+            <li className={s.specialistsItem}>
+              <div className={s.specialistsBlock}>
+                <img
+                  src={logistic4}
+                  alt="Instalers"
+                  className={s.specialistsPhoto}
+                />
+                <div className={s.subtitleDiv}>
+                  <h3 className={s.subtitle}>{t('specialist__item4')}</h3>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li className={s.specialistsItem}>
-            <div className={s.specialistsBlock}>
-              <img
-                src={logistic5}
-                alt="Instalers"
-                className={s.specialistsPhoto}
-              />
-              <div className={s.subtitleDiv}>
-                <h3 className={s.subtitle}>{t('specialist__item5')}</h3>
+            <li className={s.specialistsItem}>
+              <div className={s.specialistsBlock}>
+                <img
+                  src={logistic5}
+                  alt="Instalers"
+                  className={s.specialistsPhoto}
+                />
+                <div className={s.subtitleDiv}>
+                  <h3 className={s.subtitle}>{t('specialist__item5')}</h3>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
 
-          <li className={s.specialistsItem}>
-            <div className={s.specialistsBlock}>
-              <img
-                src={logistic6}
-                alt="Instalers"
-                className={s.specialistsPhoto}
-              />
-              <div className={s.subtitleDiv}>
-                <h3 className={s.subtitle}>{t('specialist__item6')}</h3>
+            <li className={s.specialistsItem}>
+              <div className={s.specialistsBlock}>
+                <img
+                  src={logistic6}
+                  alt="Instalers"
+                  className={s.specialistsPhoto}
+                />
+                <div className={s.subtitleDiv}>
+                  <h3 className={s.subtitle}>{t('specialist__item6')}</h3>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+            </li>
+          </ul>
+        </div>
+      </Fade>
 
-      <div className={s.secondBlock}>
-        <h2 className={s.title}>{t('advantages__title')}</h2>
-        <ul className={s.advantagesList}>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic1')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic2')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic3')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic4')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic5')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic6')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic7')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic8')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic9')}</p>
-          </li>
-          <li className={s.advantagesItem}>
-            <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
-            <p className={s.advantagesText}>{t('advantages__logistic10')}</p>
-          </li>
-        </ul>
-      </div>
+      <Fade clear>
+        <div className={s.secondBlock}>
+          <h2 className={s.title}>{t('advantages__title')}</h2>
+          <ul className={s.advantagesList}>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic1')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic2')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic3')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic4')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic5')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic6')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic7')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic8')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic9')}</p>
+            </li>
+            <li className={s.advantagesItem}>
+              <img src={advantagesSvg} alt="" className={s.advantagesSvg} />
+              <p className={s.advantagesText}>{t('advantages__logistic10')}</p>
+            </li>
+          </ul>
+        </div>
+      </Fade>
 
-      <div className={s.supervisionPhotos}>
-        <ul className={s.listOfImages}>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo1}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo2}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo3}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo4}
-              alt="construction"
-            />
-          </li>
-        </ul>
-      </div>
+      <Fade clear>
+        <div className={s.supervisionPhotos}>
+          <ul className={s.listOfImages}>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo1}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo2}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo3}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo4}
+                alt="construction"
+              />
+            </li>
+          </ul>
+        </div>
+      </Fade>
 
-      <AskUs />
+      <Fade clear>
+        <AskUs />
+      </Fade>
     </div>
   );
 }

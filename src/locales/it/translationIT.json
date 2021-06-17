@@ -22,8 +22,12 @@
   "aboutUs__mission": "Missione",
   "aboutUs_missionText1": "Creare un supporto al cliente, implementando i progetti in modo che soddisfino tutte le esigenze e le singole aspettative, evitando l’insorgenza di rischi. Ci poniamo come referente e “general contractor” nelle gestione delle attività di approvvigionamento, costruzione, messa in opera, avviamento, gestione e conduzione di impianti e processi industriali.",
   "aboutUs_missionText2": "Più di 16 anni di esperienza si traducono in un “Know-how” capace di risolvere le problematiche costruttive e di funzionamento, sia sul campo sia nel post vendita, gestendo manutenzioni e processi produttivi.",
+  "brochures": "Brochure",
+  "download": "Scarica",
 
   "ourCompanies__title": "Le nostre aziende",
+
+  "projects": "Progetti completati",
 
   "ourServices__title": "I nostri servizi",
   "services__supervision": "Supervisione",
@@ -53,6 +57,8 @@
 
   "askUs__text": "Hai una domanda? Chiedici",
   "askUs__button": "Chiedici",
+  "advice": "Ti serve un consiglio?",
+  "contactUs__text": "Contattarci",
 
   "map__title": "Esperienza mondiale",
   "numberOfOffices": "Sedi principali",

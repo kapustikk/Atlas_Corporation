@@ -17,6 +17,7 @@ import { Legend, DataLabel } from '@syncfusion/ej2-maps';
 import { Trans } from 'react-i18next';
 import world_map from '../Contacts/world-map.json';
 import data from '../Contacts/data.json';
+import countries from '../Contacts/countries.json';
 // import api from '../api';
 import s from '../AboutUs/AboutUs.module.css';
 import three from '../images/03.svg';
@@ -91,6 +92,19 @@ export default class Maps extends Component {
                     height={15}
                     width={15}
                     animationDuration={0}
+                  ></MarkerDirective>
+                  <MarkerDirective
+                    visible={true}
+                    dataSource={countries}
+                    tooltipSettings={{
+                      visible: true,
+                      valuePath: 'name',
+                    }}
+                    shape="Circle"
+                    height={10}
+                    width={10}
+                    animationDuration={0}
+                    fill="#233d97"
                   ></MarkerDirective>
                 </MarkersDirective>
               </LayerDirective>

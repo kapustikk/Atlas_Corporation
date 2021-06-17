@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Fade from 'react-reveal/Fade';
 import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
 import mainPhoto from '../images/assembly.jpg';
@@ -14,79 +15,85 @@ export default function Assembly() {
 
   return (
     <div className={s.supervisionDiv}>
-      <div className={s.firstBlock}>
-        <div className={s.textBlock}>
-          <h2 className={s.title}>{t('services__assembly')}</h2>
-          <p className={s.text}>{t('assemblyPage__text')}</p>
+      <Fade clear>
+        <div className={s.firstBlock}>
+          <div className={s.textBlock}>
+            <h2 className={s.title}>{t('services__assembly')}</h2>
+            <p className={s.text}>{t('assemblyPage__text')}</p>
 
-          <p className={s.textTitle}>{t('assembly__list')}</p>
-          <ul className={s.listOfItems}>
-            <li>{t('assembly__item1')}</li>
-            <li>{t('assembly__item2')}</li>
-            <li>{t('assembly__item3')}</li>
-            <li>{t('assembly__item4')}</li>
-            <li>{t('assembly__item5')}</li>
-            <li>{t('assembly__item6')}</li>
+            <p className={s.textTitle}>{t('assembly__list')}</p>
+            <ul className={s.listOfItems}>
+              <li>{t('assembly__item1')}</li>
+              <li>{t('assembly__item2')}</li>
+              <li>{t('assembly__item3')}</li>
+              <li>{t('assembly__item4')}</li>
+              <li>{t('assembly__item5')}</li>
+              <li>{t('assembly__item6')}</li>
+            </ul>
+          </div>
+          <img src={mainPhoto} alt="" className={s.photo} />
+        </div>
+
+        <div className={s.secondBlock}>
+          <p className={s.textTitle}>{t('services__assembly')}:</p>
+          <ul className={s.listOfTypes}>
+            <li>{t('assembly__Item')}</li>
           </ul>
         </div>
-        <img src={mainPhoto} alt="" className={s.photo} />
-      </div>
+      </Fade>
 
-      <div className={s.secondBlock}>
-        <p className={s.textTitle}>{t('services__assembly')}:</p>
-        <ul className={s.listOfTypes}>
-          <li>{t('assembly__Item')}</li>
-        </ul>
-      </div>
+      <Fade clear>
+        <div className={s.supervisionPhotos}>
+          <ul className={s.listOfImages}>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo1}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo2}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo3}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo4}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo5}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo6}
+                alt="construction"
+              />
+            </li>
+          </ul>
+        </div>
+      </Fade>
 
-      <div className={s.supervisionPhotos}>
-        <ul className={s.listOfImages}>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo1}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo2}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo3}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo4}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo5}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo6}
-              alt="construction"
-            />
-          </li>
-        </ul>
-      </div>
-
-      <AskUs />
+      <Fade clear>
+        <AskUs />
+      </Fade>
     </div>
   );
 }

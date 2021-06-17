@@ -42,7 +42,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background: linear-gradient(92.04deg, #233d97 3.45%, #192550 96.55%), #f0f0f0;
+  /* background: linear-gradient(92.04deg, #233d97 3.45%, #192550 96.55%), #f0f0f0; */
 }
 
 .titleDiv {
@@ -1351,6 +1351,7 @@ a:focus {
 .modalInfo {
   display: block;
   text-align: center;
+  padding: 40px;
 }
 
 .feedback {
@@ -1365,7 +1366,7 @@ a:focus {
 .advice {
   font-family: Gilroy;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 36px;
   line-height: 1.2;
 
   color: #000000;
@@ -1375,7 +1376,26 @@ a:focus {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 180%;
-  color: #000000;
+  color: #e50914;
+}
+
+.contactUsMail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(0, 100, 200, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms ease-in-out;
+}
+
+.contactUsMail:hover,
+.contactUsMail:focus {
+  background-size: 0 0.1em, 100% 0.1em;
 }
 
 .inputArea {

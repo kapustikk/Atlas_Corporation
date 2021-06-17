@@ -1,8 +1,10 @@
 import { lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import Loader from 'react-loader-spinner';
 import Container from './components/Container/Container';
 import AppBar from './components/AppBar/AppBar';
 import Footer from './components/AboutUs/Footer';
+import s from './components/AboutUs/AboutUs.module.css';
 
 const MainPage = lazy(() =>
   import('./components/AboutUs/AboutUs' /* webpackChunkName: "MainPage" */),
@@ -90,7 +92,20 @@ function App() {
     <Container>
       <AppBar />
 
-      <Suspense fallback={<h2>Loading...</h2>}>
+      <Suspense
+        fallback={
+          <h2>
+            <Loader
+              type="TailSpin"
+              color="#fff"
+              height={80}
+              width={80}
+              timeout={3000}
+              className={s.loader}
+            />
+          </h2>
+        }
+      >
         <Switch>
           <Route path="/" exact>
             <MainPage />

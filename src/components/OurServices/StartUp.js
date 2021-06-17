@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import Fade from 'react-reveal/Fade';
 import AskUs from '../AboutUs/AskUs';
 import s from './Services.module.css';
 import mainPhoto from '../images/startUp.jpg';
@@ -12,47 +13,49 @@ export default function StartUp() {
 
   return (
     <div className={s.supervisionDiv}>
-      <div className={s.firstBlock}>
-        <div className={s.textBlock}>
-          <h2 className={s.titleStartUp}>{t('services__commissioning')}</h2>
-          <p className={s.text}>{t('startUpPage__text1')}</p>
-          <p className={s.text}>{t('startUpPage__text2')}</p>
+      <Fade clear>
+        <div className={s.firstBlock}>
+          <div className={s.textBlock}>
+            <h2 className={s.titleStartUp}>{t('services__commissioning')}</h2>
+            <p className={s.text}>{t('startUpPage__text1')}</p>
+            <p className={s.text}>{t('startUpPage__text2')}</p>
+          </div>
+          <img src={mainPhoto} alt="" className={s.photo} />
         </div>
-        <img src={mainPhoto} alt="" className={s.photo} />
-      </div>
-      <div className={s.supervisionPhotos}>
-        <ul className={s.listOfImages}>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo1}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo2}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo3}
-              alt="construction"
-            />
-          </li>
-          <li className={s.itemsOfImages}>
-            <img
-              className={s.imagesForServices}
-              src={photo4}
-              alt="construction"
-            />
-          </li>
-        </ul>
-      </div>
-      <AskUs />
+        <div className={s.supervisionPhotos}>
+          <ul className={s.listOfImages}>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo1}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo2}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo3}
+                alt="construction"
+              />
+            </li>
+            <li className={s.itemsOfImages}>
+              <img
+                className={s.imagesForServices}
+                src={photo4}
+                alt="construction"
+              />
+            </li>
+          </ul>
+        </div>
+        <AskUs />
+      </Fade>
     </div>
   );
 }

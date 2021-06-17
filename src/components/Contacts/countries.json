@@ -1,0 +1,42 @@
+[
+  { "name": "Canada", "latitude": "56.0", "longitude": "-96.0" },
+  { "name": "United States", "latitude": "37.6", "longitude": "-95.665" },
+  { "name": "Ecuador", "latitude": "-1.7929665", "longitude": "-78.1368875" },
+  { "name": "Colombia", "latitude": "4.1156735", "longitude": "-72.9301367" },
+  { "name": "Brazil", "latitude": "-14.2400732", "longitude": "-53.1805017" },
+  {
+    "name": "Martinique",
+    "latitude": "14.6336817",
+    "longitude": "-61.0198104"
+  },
+  { "name": "Guinea", "latitude": "9.9327629", "longitude": "-11.3580296" },
+  { "name": "Zimbabwe", "latitude": "-19.0169211", "longitude": "29.1528018" },
+  { "name": "Congo", "latitude": "-0.6605788", "longitude": "14.8965794" },
+  { "name": "Morocco", "latitude": "31.794525", "longitude": "-7.0849336" },
+  { "name": "Algeria", "latitude": "28.0289837", "longitude": "1.6666663" },
+  { "name": "Egypt", "latitude": "26.8357675", "longitude": "30.7956597" },
+  { "name": "Spain", "latitude": "40.2085", "longitude": "-3.713" },
+  { "name": "France", "latitude": "46.71109", "longitude": "1.7191036" },
+  { "name": "Germany", "latitude": "51.1642292", "longitude": "10.4541194" },
+  { "name": "Serbia", "latitude": "44.2107675", "longitude": "20.9224158" },
+  { "name": "Romania", "latitude": "45.9442858", "longitude": "25.0094303" },
+  { "name": "Greece", "latitude": "38.2749497", "longitude": "23.8102717" },
+  { "name": "Turkey", "latitude": "38.9573415", "longitude": "35.240741" },
+  { "name": "Finland", "latitude": "64.9146659", "longitude": "26.0672554" },
+  { "name": "Estonia", "latitude": "58.5974875", "longitude": "24.9872555" },
+  { "name": "Russian Federation", "latitude": "55.0", "longitude": "103.0" },
+  { "name": "China", "latitude": "35.8592948", "longitude": "104.1361118" },
+  { "name": "Japan", "latitude": "37.4900318", "longitude": "136.4664008" },
+  { "name": "Pakistan", "latitude": "30.3894007", "longitude": "69.3532207" },
+  { "name": "India", "latitude": "21.1289956", "longitude": "82.7792201" },
+  { "name": "Thailand", "latitude": "13.03887", "longitude": "101.490104" },
+  { "name": "Indonesia", "latitude": "-2.548926", "longitude": "118.0148634" },
+  { "name": "Qatar", "latitude": "25.3271054", "longitude": "51.1966577" },
+  { "name": "Saudi Arabia", "latitude": "24.266906", "longitude": "45.107849" },
+  {
+    "name": "United Arab Emirates",
+    "latitude": "24.3505839",
+    "longitude": "53.9396418"
+  },
+  { "name": "Oman", "latitude": "21.5278654", "longitude": "55.9196996" }
+]

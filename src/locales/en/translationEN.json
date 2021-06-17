@@ -22,8 +22,12 @@
   "aboutUs__mission": "Our mission",
   "aboutUs_missionText1": "To create a customer care service, implementing projects that fully embrace the requirements and individual expectations, thereby avoiding the emergence of risks. We present ourselves as a referent and 'general contractor' for the management of activities including procurement, construction, commissioning, start-up, management and running of industrial plants and processes.",
   "aboutUs_missionText2": "Over 16 years of experience translate into a 'know-how' capable of solving construction and operational problems, both on the field and during after sales periods, managing maintenance and production processes.",
+  "brochures": "Brochures",
+  "download": "Download",
 
   "ourCompanies__title": "Our companies",
+
+  "projects": "Completed projects",
 
   "ourServices__title": "Our services",
   "services__supervision": "Supervision",
@@ -53,6 +57,8 @@
 
   "askUs__text": "Have a question? Ask us",
   "askUs__button": "Ask us",
+  "advice": "Need an advice?",
+  "contactUs__text": "Contact us",
 
   "map__title": "We work all over the world",
   "numberOfOffices": "Central offices",

@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import Fade from 'react-reveal/Fade';
 
 import s from '../AboutUs/AboutUs.module.css';
 import aboutUs from '../images/about-us.jpg';
@@ -16,7 +17,6 @@ import video from '../video/mainVideo.mp4';
 
 export default function AboutUs() {
   const { t } = useTranslation();
-
   const location = useLocation();
 
   return (
@@ -51,40 +51,53 @@ export default function AboutUs() {
         </div> */}
         </div>
       </div>
-      <div className={s.aboutUsBlock}>
-        <div className={s.aboutUs}>
-          <div className={s.imageAboutUs}>
-            <img src={aboutUs} alt="" width="350" />
-          </div>
-          <div className={s.textAboutUsDiv}>
-            {/* <h3 className={s.moreAboutTitle}>More about Atlas</h3> */}
-            <h2 className={s.titleAboutUs}>{t('aboutUs__mainTitle')}</h2>
-            <p className={s.textTitle}>{t('aboutUs__title')}</p>
-            <p className={s.text}> {t('aboutUs__text')} </p>
-            <div>
-              <Link
-                className={s.linkToCompanies}
-                to={{
-                  pathname: `/about-us`,
-                  state: {
-                    from: location.pathname,
-                  },
-                }}
-              >
-                <button type="button" className={s.button}>
-                  {t('button__learnMore')}
-                </button>
-              </Link>
+      <Fade clear>
+        <div className={s.aboutUsBlock}>
+          <div className={s.aboutUs}>
+            <div className={s.imageAboutUs}>
+              <img src={aboutUs} alt="" width="350" />
+            </div>
+            <div className={s.textAboutUsDiv}>
+              {/* <h3 className={s.moreAboutTitle}>More about Atlas</h3> */}
+              <h2 className={s.titleAboutUs}>{t('aboutUs__mainTitle')}</h2>
+              <p className={s.textTitle}>{t('aboutUs__title')}</p>
+              <p className={s.text}> {t('aboutUs__text')} </p>
+              <div>
+                <Link
+                  className={s.linkToCompanies}
+                  to={{
+                    pathname: `/about-us`,
+                    state: {
+                      from: location.pathname,
+                    },
+                  }}
+                >
+                  <button type="button" className={s.button}>
+                    {t('button__learnMore')}
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Fade>
       <OurCompanies />
-      <OurServices />
-      <OurBenefits />
-      <CompletedProjects />
-      <AskUs />
-      <MapDiv />
+      <Fade clear>
+        <OurServices />
+      </Fade>
+      <Fade clear>
+        <OurBenefits />
+      </Fade>
+      <Fade clear>
+        <CompletedProjects />
+      </Fade>
+      <Fade clear>
+        <AskUs />
+      </Fade>
+      <Fade clear>
+        <MapDiv />
+      </Fade>
+      <div></div>
     </div>
   );
 }
